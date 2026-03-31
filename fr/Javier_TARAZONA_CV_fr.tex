@@ -1,0 +1,389 @@
+% Macros compactas solo para EXPÉRIENCE (espaciado intermedio)
+\newcommand{\resumeItemCompact}[2]{\item\small{\textbf{#1}: #2}\vspace{-2pt}}
+\newcommand{\resumeItemListStartCompact}{\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt,nolistsep]}
+\newcommand{\resumeItemListEndCompact}{\end{itemize}\vspace{-4pt}}
+%-------------------------
+% Resume in Latex
+% Author : Javier Tarazona
+%------------------------
+
+\documentclass[letterpaper,9pt]{article}
+\DeclareUnicodeCharacter{00A0}{~}
+\DeclareUnicodeCharacter{2013}{\textendash}
+\DeclareUnicodeCharacter{2014}{\textemdash}
+\DeclareUnicodeCharacter{201C}{``}
+\DeclareUnicodeCharacter{201D}{''}
+\DeclareUnicodeCharacter{2022}{\textbullet}
+\DeclareUnicodeCharacter{25E6}{\textopenbullet}
+% \setlist[itemize]{label=\textbullet, labelsep=0.5em, leftmargin=*} % Moved after \begin{document}
+\usepackage[T1]{fontenc}      % Codificación de salida (acentos y símbolos)
+\usepackage[empty]{fullpage}
+\usepackage[export]{adjustbox}
+\usepackage[pdftex]{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[utf8]{inputenc}   % Lee texto en UTF-8
+\usepackage{array}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{enumitem}         % Control de listas (si no lo tienes ya)
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{verbatim}
+\usepackage{xcolor}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[export]{adjustbox}
+\usepackage{xcolor}
+\usepackage{comment}
+
+\begin{comment}  
+\end{comment}
+% --- Codificación y fuentes seguras ---
+\usepackage[utf8]{inputenc}   % Lee texto en UTF-8
+\usepackage[T1]{fontenc}      % Codificación de salida (acentos y símbolos)
+\usepackage{enumitem}         % Control de listas (si no lo tienes ya)
+
+% --- Viñetas limpias y seguras ---
+\setlist[itemize]{label=\textbullet, labelsep=0.5em, leftmargin=*}
+%\end{comment}
+
+\pagestyle{empty}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%\definecolor{mydarkgreen}{RGB}{0, 140, 123}
+\definecolor{mydarkgreen}{RGB}{0, 0, 0}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{mydarkgreen}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      	\textbf{#1} & \textbf{\textcolor{mydarkgreen}{#2}} \\
+      	\textit{\footnotesize#3} & \textit{\footnotesize \textcolor{mydarkgreen}{#4}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Indented paragraph helper: \indentbox[ancho]{contenido}
+% Uso: \indentbox{Texto...}  o  \indentbox[1.5em]{Texto...}
+\newcommand{\indentbox}[2][1em]{\hspace*{#1}\parbox{\dimexpr\linewidth-#1\relax}{#2}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% --- Viñetas limpias y seguras ---
+\setlist[itemize]{label=\textbullet, labelsep=0.5em, leftmargin=*}
+
+%----------HEADING-----------------
+
+\noindent
+\begin{tabularx}{\textwidth}{>{\hsize=0.23\hsize}X>{\hsize=1.72\hsize}X}
+
+  %\centering \adjustbox{valign=c}{\includegraphics[scale=0.015]{Digital_photo.jpg}} & 
+  \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+        
+            \textbf{\Large \textcolor{mydarkgreen}{Javier Andrés TARAZONA JIMENEZ}} & \textbf{\textcolor{mydarkgreen}{Email:}} \href{mailto:jtarazonaj@unal.edu.co}{jtarazonaj@unal.edu.co}\\
+            
+            \footnotesize Ingénieur en Systèmes et Informatique - Intelligence Artificielle & \href{mailto:javier-andres.tarazona@ensta-paris.fr}{javier-andres.tarazona@ensta-paris.fr}\\
+            
+            \href{https://www.linkedin.com/in/javier-andres-tarazona-jimenez-84b489222/}{\textcolor{blue}{\underline{LinkedIn}}} & \textbf{\textcolor{mydarkgreen}{Mobile:}} +33 07 46 36 97 75 \\
+
+            \href{https://github.com/JavierTarazona06}{\textcolor{blue}{\underline{GitHub}}} & Palaiseau, Île de France, France (91120)\\
+        \end{tabular*}
+    \\
+\end{tabularx}
+
+\vspace{0.14cm}
+
+%\textbf{Recherche stage de recherche de au moins 10 semaines sur 
+%en vision par ordinateur à partir de 16 mai 2026} 
+
+
+\vspace{-0.25cm}
+%-----------FORMATION-----------------
+\section{\textcolor{mydarkgreen}{\textbf{FORMATION}}}
+
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{0.24\textwidth}}
+  \begin{minipage}[t]{\linewidth}\raggedright
+  \textbullet\ \textbf{ENSTA Paris - Institut Polytechnique de Paris}\\
+  \textit{\footnotesize Diplôme d'Ingénieur - Axé sur IA - Master of Science in Engineering}\\
+  \textit{\footnotesize Apprentissage automatique (Machine Learning), Statistique}
+  \end{minipage}
+  &
+  \begin{minipage}[t]{\linewidth}\raggedleft
+  \textbf{Paris, France}\\
+  {\footnotesize\textit{Septembre 2025 -- Présent}}
+  \end{minipage}
+  \\
+  \begin{minipage}[t]{\linewidth}
+  \textbullet\ \textbf{Universidad Nacional de Colombia (UNAL)}\\
+  \textit{\footnotesize Ingénierie des Systèmes et Informatique}\\
+  \textit{\footnotesize Exonération des frais de scolarité pour \textbf{excellence académique} (2021\textendash{}2024)}\\
+  \textit{\footnotesize Systèmes multi-agents, Modèles stochastiques, Optimisation}
+  \end{minipage}
+  &
+  \begin{minipage}[t]{\linewidth}\raggedleft
+  \textbf{Bogotá, Colombie}\\
+  {\footnotesize\textit{Janvier 2021 -- Juillet 2025}}
+  \end{minipage}
+  \\
+  \begin{minipage}[t]{\linewidth}
+  \textbullet\ \textbf{University of Saskatchewan}\\
+  \textit{\footnotesize Échange académique.}\\
+  \textit{\footnotesize Ingénierie logicielle, Algorithmes, Systèmes d'exploitation et Français des Affaires}
+  \end{minipage}
+  &
+  \begin{minipage}[t]{\linewidth}\raggedleft
+  \textbf{Saskatoon, Canada}\\
+  {\footnotesize\textit{Septembre 2024 -- Décembre 2024}}
+  \end{minipage}
+\end{tabularx}
+
+\vspace{-0.25cm}
+%--------DISTINCTIONS------------
+\section{\textcolor{mydarkgreen}{\textbf{DISTINCTIONS}}}
+
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{0.6\textwidth}}
+    \begin{minipage}[t]{\linewidth}\raggedright
+      \textbullet\ \textbf{\textbf{Bourse Eiffel Excellence}}\\
+      \textit{\footnotesize Master 2025\textendash{}2027}\\
+    \end{minipage}
+    &
+    \begin{minipage}[t]{\linewidth}\raggedright
+      \textbullet\ \textbf{Mention d'Honneur \textendash{} ICPC Colombie 2023}\\
+      {\footnotesize\textit{XXXVII Marathon National de Programmation ACIS REDIS}}
+    \end{minipage}\\
+\end{tabularx}
+
+
+\vspace{-0.25cm}
+%-----------EXPERIENCE-----------------
+\section{\textcolor{mydarkgreen}{\textbf{EXPÉRIENCE PROFESSIONNELLE}}}
+  \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{0.4\textwidth}}
+    
+    
+    \begin{minipage}[t]{\linewidth}\raggedright
+      \textbullet\ \textbf{APEDYS91}\\
+      \textit{\footnotesize Machine Learning / NLP Engineer}\\
+    \end{minipage}
+    &
+    \begin{minipage}[t]{\linewidth}\raggedleft 
+      \textbf{Paris, France}\\
+      {\footnotesize\textit{Octobre 2025 - Présent}}
+    \end{minipage}\\
+
+    \multicolumn{2}{l}{
+    \begin{minipage}[t]{\linewidth}\raggedright
+        \indentbox{\footnotesize \textbf{- Développement IA et NLP : } Application locale de 
+        correction de texte en français basée sur un \textbf{pipeline 
+        hybride règles \& LLMs (LanguageTool \& Mistral / Gemma).}
+        Définition de guardrails robustes (\textbf{NER avec spaCy}, contrôle 
+        des entités/nombres et du ratio de nouveaux tokens, sélection dynamique du modèle 
+        selon la RAM/VRAM) afin de garantir la fiabilité et d'éviter l'insertion d'informations 
+        étrangères au texte original.}
+    \end{minipage}
+    }\\
+
+    %------------------------------------
+    %------------------------------------
+    
+    \begin{minipage}[t]{\linewidth}\raggedright
+      \textbullet\ \textbf{Engin A.I}\\
+      \textit{\footnotesize Ingénieur Logiciel et Vision par Ordinateur}\\
+    \end{minipage}
+    &
+    \begin{minipage}[t]{\linewidth}\raggedleft 
+      \textbf{Colombie - États-Unis}\\
+      {\footnotesize\textit{12 mois : Jan. - Juil. 2024 et Fév. - Juin 2025}}
+    \end{minipage}\\
+
+    \multicolumn{2}{l}{
+      \begin{minipage}[t]{\linewidth}\raggedright
+        \indentbox{\footnotesize \textbf{- Développement Python et Structuration Logicielle : }Refactorisation de deux bibliothèques avec une conception orientée 
+        objet et modulaire, optimisant l'analyse d'images et automatisant 
+        le traitement de données \textbf{(+80 \% d'efficacité du travail)}.}
+      \end{minipage}
+    }\\
+
+    \multicolumn{2}{l}{
+      \begin{minipage}[t]{\linewidth}\raggedright
+        \indentbox{\footnotesize \textbf{- Vision par Ordinateur (OpenCV, NumPy, Mathématiques) : }Amélioration d'une ligne de post-traitement pour la détection 
+        de voies et de lignes de marquage au sol, améliorant la vitesse 
+        de \textbf{50 \% et la précision de 60 \%}. Application de techniques 
+        \textbf{d'apprentissage automatique (clustering non supervisé)} afin d'améliorer 
+        la robustesse et les performances du modèle.}
+      \end{minipage}
+    }\\
+
+    \multicolumn{2}{l}{
+      \begin{minipage}[t]{\linewidth}\raggedright
+        \indentbox{\footnotesize \textbf{- Analyse de données et Abstraction : }Génération de trajectoires de roue (WheelPath) et corrélation des zones de détérioration, 
+        renforçant la performance globale du système \textbf{(+10 \% de taux de satisfaction utilisateur)}.}
+      \end{minipage}
+    }\\
+
+
+  \end{tabularx}
+
+
+%\vspace{-0.3cm}
+%%------------------------------
+%%------------------------------
+%%------------------------------
+\section{\textcolor{mydarkgreen}{\textbf{PROJETS ACADÉMIQUES}}}
+
+  \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{0.01\textwidth}}
+  
+    \begin{minipage}[t]{\linewidth}\raggedright
+      \textbullet\ \textbf{"Tameo" - Vision par ordinateur (projet en cours)}\\
+      \indentbox{\footnotesize Développement du système de vision par 
+      ordinateur d'un bateau de classe IA dans le cadre 
+      du Monaco Energy Boat Challenge 2026.}\\
+    \end{minipage}
+    &
+    \begin{minipage}[t]{\linewidth}\raggedleft %Texte here
+    \end{minipage}\\
+
+    \begin{minipage}[t]{\linewidth}\raggedright
+      \textbullet\ \textbf{"Slow" - Application de bureau \& Vision par ordinateur}\\
+      \textit{\footnotesize Python, MySQL, OpenCV}\\
+      \indentbox{\footnotesize \textbf{- Reconnaissance de véhicules et Détection de Vitesse : } Conception et développement d'un système d'analyse vidéo mesurant la vitesse 
+        des véhicules, améliorant l'automatisation du suivi du trafic.}\\
+    \end{minipage}
+    &
+    \begin{minipage}[t]{\linewidth}\raggedleft %Texte here
+    \end{minipage}\\
+
+    \vspace{0.01cm}
+    \begin{minipage}[t]{\linewidth}\raggedright
+      \textbullet\ \textbf{"ORIUN" - Création de un plateforme web de gestion et réservation}\\
+      \textit{\footnotesize Python, Django, React, SQL, Docker, Google Cloud Platform (GCP), SCRUM, Systèmes en Temps Réel}\\
+      %\indentbox{\footnotesize \textbf{- Systèmes en Temps Réel :  } Intégration de fonctionnalités de réservation en temps réel, optimisant l'expérience utilisateur et la fiabilité.}\\
+      \indentbox{\footnotesize \textbf{- Idéation, Prototypage et Communication :  } Supervisé et validé par l'Unité de Gestion de l'Innovation de l'UNAL.}
+    \end{minipage}
+    &
+    \begin{minipage}[t]{\linewidth}\raggedleft %Texte here
+    \end{minipage}\\
+
+    \vspace{0.01cm}
+    \begin{minipage}[t]{\linewidth}\raggedright
+      \textbullet\ \textbf{"Sharp Sight" - API \& Web Scraping}\\
+      \textit{\footnotesize FastAPI, Python Docker, Google Cloud Platform (GCP)}\\
+      \indentbox{\footnotesize Développement d'une API pour comparer les prix de produits technologiques via scraping en temps réel.}
+    \end{minipage}
+    &
+    \begin{minipage}[t]{\linewidth}\raggedleft %Texte here
+    \end{minipage}\\
+
+  \end{tabularx}
+
+
+
+  
+%--------EXPERTISE------------
+%\section{\textcolor{mydarkgreen}{\textbf{p}}}
+
+\vspace{6pt}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.4pt}
+
+%\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.4\textwidth} >{\raggedright\arraybackslash}p{0.3\textwidth} >{\raggedright\arraybackslash}p{0.3\textwidth}}
+  \textbf{\underline{Compétences techniques}}  & \textbf{\underline{Langues}} & \textbf{\underline{Centres d'intérêt}} \\
+  \begin{minipage}[t]{\linewidth}\scriptsize\raggedright
+    \begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+      \item \textbf{Outils d'IA :} Python, Scikit-Learn, OpenCV, NumPy, 
+        Pandas, spaCy, LanguageTool, Llama
+      \item \textbf{Programmation, Logiciels et Cloud :} Google Cloud Platform (GCP), Docker, Django, FastAPI, 
+        React, JavaScript, C++/C, Java, SQL/NoSQL, Packagings et distribution sous Windows (PyInstaller, Inno Setup)
+      \item \textbf{Méthodologies :} Agile (SCRUM), Git/GitHub, CI/CD, architecture logicielle
+    \end{itemize}
+  \end{minipage}
+  
+  &
+  \begin{minipage}[t]{\linewidth}\scriptsize\raggedright
+    \begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+      \item \textbf{Anglais} (C1 \textendash{} IELTS 2024)
+      \item \textbf{Français} (B2 \textendash{} DELF 2024)
+      \item \textbf{Espagnol} (langue maternelle)
+      \item \textbf{Portugais} (Basique)
+    \end{itemize}
+  \end{minipage}
+
+  \vspace{0.2cm}
+  \textbf{\underline{Compétences relationnelles}}
+
+  \begin{minipage}[t]{\linewidth}\scriptsize\raggedright
+    \begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+      \item Leadership
+      \item Communication interculturelle
+    \end{itemize}
+  \end{minipage}
+
+  &
+  \begin{minipage}[t]{\linewidth}\scriptsize\raggedright
+    \begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+      \item Tennis, randonnée, vélo, escrime
+      \item Voyages (Europe, Amérique du Nord, Colombie)
+      \item Lecture (éthique de l'IA)
+    \end{itemize}
+  \end{minipage}
+\\
+\end{tabularx}
+
+
+
+%-------------------------------------------
+\end{document}

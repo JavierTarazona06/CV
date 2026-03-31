@@ -1,0 +1,39 @@
+# Local tooling
+.codex
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.idea/
+.vscode/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.xdv
+
+# Generated documents
+*.pdf
+*.html
+
+# Export helper folders/files
+*_archivos/
+word/
+
+# Project-specific generated asset copies
+**/0Digital_photo.jpg
+**/Digital_photoa.jpg
