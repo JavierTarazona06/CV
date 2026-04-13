@@ -39,7 +39,7 @@ jobs:
           <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Javier Tarazona's CV</title>
+            <title>Javier Tarazona CV</title>
             <style>
               :root {
                 color-scheme: light;
@@ -99,8 +99,8 @@ jobs:
           </head>
           <body>
             <main>
-              <h1>Javier Tarazona's CV</h1>
-              <p>Click the link below to open the PDF.</p>
+              <h1>Javier Tarazona CV</h1>
+              <p>Click the desired button to open the PDF.</p>
               <a href="./Javier_TARAZONA_CV_fr.pdf">Open CV French Version</a>
               <a href="./Javier_TARAZONA_CV_en.pdf">Open CV English Version</a>
             </main>
