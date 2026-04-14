@@ -102,12 +102,13 @@ jobs:
               <h1>Javier Tarazona</h1>
               <h2>AI Engineer</h2>
               <p>Click the desired button to open the CV PDF.</p>
-              <a href="./Javier_TARAZONA_CV_fr.pdf">Open French Version</a>
-              <a href="./Javier_TARAZONA_CV_en.pdf">Open English Version</a>
+              <a href="./Javier_TARAZONA_CV_fr.pdf?v=__CV_VERSION__">Open French Version</a>
+              <a href="./Javier_TARAZONA_CV_en.pdf?v=__CV_VERSION__">Open English Version</a>
             </main>
           </body>
           </html>
           EOF
+          sed -i "s/__CV_VERSION__/${GITHUB_SHA}/g" site/index.html
 
       - name: Upload GitHub Pages artifact
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
