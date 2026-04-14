@@ -124,6 +124,14 @@
 
 \begin{document}
 
+\AddToHookNext{shipout/foreground}{%
+  \put(\dimexpr\paperwidth-0.35cm\relax,-\dimexpr\paperheight-0.35cm\relax){%
+    \makebox(0,0)[rb]{%
+      \includegraphics[width=1.6cm]{qr_CV.png}%
+    }%
+  }%
+}
+
 % --- Viñetas limpias y seguras ---
 \setlist[itemize]{label=\textbullet, labelsep=0.5em, leftmargin=*}
 
