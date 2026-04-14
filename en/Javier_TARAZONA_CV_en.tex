@@ -126,7 +126,12 @@
 \AddToHookNext{shipout/foreground}{%
   \put(\dimexpr\paperwidth-0.35cm\relax,-\dimexpr\paperheight-0.35cm\relax){%
     \makebox(0,0)[rb]{%
-      \includegraphics[width=1.6cm]{qr_CV.png}%
+      \begin{minipage}{2.25cm}
+        \centering
+        {\setlength{\fboxsep}{1pt}\colorbox{white}{%
+          \parbox{2.0cm}{\centering\scriptsize\bfseries Scan QR code\\[-1pt]for digital version}}}\\[1pt]
+        \includegraphics[width=1.6cm]{qr_CV.png}%
+      \end{minipage}%
     }%
   }%
 }
@@ -206,7 +211,7 @@
 
 \begin{tabularx}{\textwidth}{
   % Width sum: 0.75 + 1.45 + 0.80 = 3.00
-  >{\hsize=0.77\hsize\linewidth=\hsize\raggedright\arraybackslash}X
+  >{\hsize=0.70\hsize\linewidth=\hsize\raggedright\arraybackslash}X
   >{\hsize=1.33\hsize\linewidth=\hsize\raggedright\arraybackslash}X
   >{\hsize=0.90\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
     \begin{minipage}[t]{\linewidth}\raggedright

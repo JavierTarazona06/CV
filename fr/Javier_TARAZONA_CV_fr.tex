@@ -127,7 +127,12 @@
 \AddToHookNext{shipout/foreground}{%
   \put(\dimexpr\paperwidth-0.35cm\relax,-\dimexpr\paperheight-0.35cm\relax){%
     \makebox(0,0)[rb]{%
-      \includegraphics[width=1.6cm]{qr_CV.png}%
+      \begin{minipage}{2.15cm}
+        \centering
+        {\setlength{\fboxsep}{1pt}\colorbox{white}{%
+          \parbox{1.9cm}{\centering\scriptsize\bfseries Scannez le QR code\\[-1pt]pour la version numérique}}}\\[1pt]
+        \includegraphics[width=1.6cm]{qr_CV.png}%
+      \end{minipage}%
     }%
   }%
 }
