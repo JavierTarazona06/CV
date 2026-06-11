@@ -1,7 +1,3 @@
-% Compact macros for EXPERIENCE (intermediate spacing)
-\newcommand{\resumeItemCompact}[2]{\item\small{\textbf{#1}: #2}\vspace{-2pt}}
-\newcommand{\resumeItemListStartCompact}{\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt,nolistsep]}
-\newcommand{\resumeItemListEndCompact}{\end{itemize}\vspace{-4pt}}
 %-------------------------
 % Resume in Latex
 % Author : Javier Tarazona
@@ -90,6 +86,10 @@
 
 %-------------------------
 % Custom commands
+\newcommand{\resumeItemCompact}[2]{\item\small{\textbf{#1}: #2}\vspace{-2pt}}
+\newcommand{\resumeItemListStartCompact}{\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt,nolistsep]}
+\newcommand{\resumeItemListEndCompact}{\end{itemize}\vspace{-4pt}}
+
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
@@ -368,9 +368,12 @@
 \noindent\rule{\textwidth}{0.4pt}
 \vspace{0.4pt}
 
-\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.62\textwidth} >{\raggedright\arraybackslash}p{0.38\textwidth}}
-  \textbf{\underline{Technical Skills}}  & \textbf{\underline{Languages}} \\
-  \begin{minipage}[t]{\linewidth}\scriptsize\raggedright
+% Keep each heading in the same minipage as its list to preserve PDF text extraction order.
+\noindent
+\begin{minipage}[t]{0.60\textwidth}
+  \raggedright
+  \textbf{\underline{Technical Skills}}\\[-2pt]
+  {\scriptsize
     \begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt,topsep=0pt,partopsep=0pt]
       \item \textbf{AI tools:} Python, Scikit-Learn, OpenCV, NumPy,
         Pandas, spaCy, LanguageTool, Llama
@@ -378,27 +381,29 @@
         React, JavaScript, C++/C, Java, SQL/NoSQL, Windows packaging and distribution (PyInstaller, Inno Setup)
       \item \textbf{Methodologies:} Agile (SCRUM), Git/GitHub, CI/CD, software architecture
     \end{itemize}
+  }
 
-    \vspace{0.15cm}
-    \textbf{\underline{Soft Skills}}
-
+  \vspace{0.15cm}
+  \textbf{\underline{Soft Skills}}\\[-2pt]
+  {\scriptsize
     \begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt,topsep=0pt,partopsep=0pt]
       \item Leadership
       \item Cross-cultural communication
     \end{itemize}
-  \end{minipage}
-
-  &
-  \begin{minipage}[t]{\linewidth}\scriptsize\raggedright
+  }
+\end{minipage}\hfill
+\begin{minipage}[t]{0.36\textwidth}
+  \raggedright
+  \textbf{\underline{Languages}}\\[-2pt]
+  {\scriptsize
     \begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
       \item \textbf{English} (C1 \textendash{} IELTS 2024)
       \item \textbf{French} (B2 \textendash{} DELF 2024)
       \item \textbf{Spanish} (native)
       \item \textbf{Portuguese} (basic)
     \end{itemize}
-  \end{minipage}
-\\
-\end{tabularx}
+  }
+\end{minipage}
 
 
 
