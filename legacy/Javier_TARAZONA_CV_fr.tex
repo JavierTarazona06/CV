@@ -117,6 +117,13 @@
 % Uso: \indentbox{Texto...}  o  \indentbox[1.5em]{Texto...}
 \newcommand{\indentbox}[2][1em]{\hspace*{#1}\parbox{\dimexpr\linewidth-#1\relax}{#2}}
 
+\newlength{\headerPhotoSpace}
+\setlength{\headerPhotoSpace}{0pt}
+\newcommand{\showHeaderPhoto}{%
+  \setlength{\headerPhotoSpace}{0.13\textwidth}%
+  \makebox[0pt][l]{\adjustbox{valign=c}{\includegraphics[scale=0.015]{../fr/Digital_photo.jpg}}}%
+}
+
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,9 +152,9 @@
 %----------HEADING-----------------
 
 \noindent
-\begin{tabularx}{\textwidth}{@{}>{\centering\arraybackslash}p{0.115\textwidth}X@{}}
-
-  \adjustbox{valign=c}{\includegraphics[scale=0.015]{Digital_photo.jpg}} &
+\showHeaderPhoto% Commenter cette ligne pour retirer la photo et élargir l'en-tête.
+\hspace*{\headerPhotoSpace}%
+\begin{minipage}[c]{\dimexpr\textwidth-\headerPhotoSpace\relax}
   \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
         
             \textbf{\Large \textcolor{mydarkgreen}{Javier Andrés TARAZONA JIMENEZ}} & \textbf{\textcolor{mydarkgreen}{Email:}} \href{mailto:javitar06@gmail.com}{javitar06@gmail.com}\\
@@ -158,8 +165,7 @@
 
             \href{https://github.com/JavierTarazona06}{\textcolor{blue}{\underline{GitHub}}} & Massy, Île de France, France (91300)\\
         \end{tabular*}
-    \\
-\end{tabularx}
+\end{minipage}
 
 \vspace{0.3cm}
 

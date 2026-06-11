@@ -116,6 +116,13 @@
 % Indented paragraph helper: \indentbox[width]{content}
 \newcommand{\indentbox}[2][1em]{\hspace*{#1}\parbox{\dimexpr\linewidth-#1\relax}{#2}}
 
+\newlength{\headerPhotoSpace}
+\setlength{\headerPhotoSpace}{0pt}
+\newcommand{\showHeaderPhoto}{%
+  \setlength{\headerPhotoSpace}{0.13\textwidth}%
+  \makebox[0pt][l]{\adjustbox{valign=c}{\includegraphics[scale=0.015]{Digital_photo.jpg}}}%
+}
+
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -146,9 +153,9 @@
 %----------HEADING-----------------
 
 \noindent
-\begin{tabularx}{\textwidth}{@{}>{\centering\arraybackslash}p{0.115\textwidth}X@{}}
-
-  \adjustbox{valign=c}{\includegraphics[scale=0.015]{Digital_photo.jpg}} &
+\showHeaderPhoto% Comment this line to remove the photo and expand the header.
+\hspace*{\headerPhotoSpace}%
+\begin{minipage}[c]{\dimexpr\textwidth-\headerPhotoSpace\relax}
   \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
 
             \textbf{\Large \textcolor{mydarkgreen}{Javier Andrés TARAZONA JIMENEZ}} & \textbf{\textcolor{mydarkgreen}{Email:}} \href{mailto:javitar06@gmail.com}{javitar06@gmail.com}\\
@@ -159,13 +166,12 @@
 
             \href{https://github.com/JavierTarazona06}{\textcolor{blue}{\underline{GitHub}}} & Paris, France\\
         \end{tabular*}
-    \\
-\end{tabularx}
+\end{minipage}
 
 \vspace{0.3cm}
 
-%\textbf{Seeking a final-year work-study position in artificial intelligence, starting in September 2026}
-\textbf{Seeking a 5 to 6 months internship in artificial intelligence, starting in September 2026}
+%\textbf{Seeking a final-year work-study position in artificial intelligence, from in September 2026}
+\textbf{Seeking a 5 to 6 months internship in artificial intelligence, from in September 2026}
 
 \vspace{-0.05cm}
 
