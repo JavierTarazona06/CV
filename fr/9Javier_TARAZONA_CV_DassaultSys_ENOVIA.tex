@@ -1,9 +1,11 @@
+% !TeX root = 9Javier_TARAZONA_CV_DassaultSys_ENOVIA.tex
+% !TeX program = pdflatex
 %-------------------------
 % Resume in Latex
 % Author : Javier Tarazona
 %------------------------
 
-\documentclass[letterpaper,8pt]{extarticle}
+\documentclass[letterpaper,10pt]{article}
 \DeclareUnicodeCharacter{00A0}{~}
 \DeclareUnicodeCharacter{2013}{\textendash}
 \DeclareUnicodeCharacter{2014}{\textemdash}
@@ -57,7 +59,7 @@
 \usepackage{enumitem}         % Control de listas (si no lo tienes ya)
 
 % --- Viñetas limpias y seguras ---
-\setlist[itemize]{label=\textbullet, labelsep=0.35em, leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt}
+\setlist[itemize]{label=\textbullet, labelsep=0.5em, leftmargin=*}
 %\end{comment}
 
 \pagestyle{empty}
@@ -67,14 +69,14 @@
 \addtolength{\evensidemargin}{-0.45in}
 \addtolength{\textwidth}{1.15in}
 \addtolength{\topmargin}{-.72in}
-\addtolength{\textheight}{1.55in}
+\addtolength{\textheight}{1.45in}
 
 \urlstyle{same}
 
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-\renewcommand{\arraystretch}{0.92}
+\renewcommand{\arraystretch}{0.90}
 
 %\definecolor{mydarkgreen}{RGB}{0, 140, 123}
 \definecolor{mydarkgreen}{RGB}{0, 0, 0}
@@ -82,7 +84,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-5pt}\scshape\raggedright\large
-}{}{0em}{}[\color{mydarkgreen}\titlerule \vspace{-6pt}]
+}{}{0em}{}[\color{mydarkgreen}\titlerule \vspace{-7pt}]
 
 %-------------------------
 % Custom commands
@@ -121,7 +123,7 @@
 \setlength{\headerPhotoSpace}{0pt}
 \newcommand{\showHeaderPhoto}{%
   \setlength{\headerPhotoSpace}{0.13\textwidth}%
-  \makebox[0pt][l]{\adjustbox{valign=c}{\includegraphics[scale=0.015]{../fr/Digital_photo.jpg}}}%
+  \makebox[0pt][l]{\adjustbox{valign=c}{\includegraphics[scale=0.015]{Digital_photo.jpg}}}%
 }
 
 
@@ -152,12 +154,12 @@
 %----------HEADING-----------------
 
 \noindent
-\showHeaderPhoto% Commenter cette ligne pour retirer la photo et élargir l'en-tête.
+%\showHeaderPhoto% Commenter cette ligne pour retirer la photo et élargir l'en-tête.
 \hspace*{\headerPhotoSpace}%
 \begin{minipage}[c]{\dimexpr\textwidth-\headerPhotoSpace\relax}
   \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
         
-            \textbf{\Large \textcolor{mydarkgreen}{Javier Andrés TARAZONA JIMENEZ}} & \textbf{\textcolor{mydarkgreen}{Email:}} \href{mailto:javitar06@gmail.com}{javitar06@gmail.com}\\
+            \textbf{\Large \textcolor{mydarkgreen}{Javier Andres TARAZONA JIMENEZ}} & \textbf{\textcolor{mydarkgreen}{Email:}} \href{mailto:javitar06@gmail.com}{javitar06@gmail.com}\\
             
             \footnotesize Étudiant (préparation Bac+5) - Ingénieur en Systèmes et Informatique - Intelligence Artificielle & \href{mailto:javier-andres.tarazona@ensta-paris.fr}{javier-andres.tarazona@ensta-paris.fr}\\
             \footnotesize Machine Learning, Vision 2D et 3D, LLMs et prototypage & \textbf{\textcolor{mydarkgreen}{Mobile:}} +33 07 46 36 97 75 \\
@@ -168,13 +170,13 @@
         \end{tabular*}
 \end{minipage}
 
-\vspace{0cm}
+\vspace{0.05cm}
 
-%\textbf{Recherche une alternance de dernière année en intelligence artificielle, à partir de septembre 2026} 
-\textbf{Recherche d'un stage de 5 à 6 mois en intelligence artificielle, à partir de septembre 2026.} 
+\textbf{Recherche une alternance de dernière année -- Ingénieur IA : Agents LLM, Modèles génératifs \& Vision 3D, à partir de septembre 2026}
+%\textbf{Recherche d'un stage de 5 à 6 mois en intelligence artificielle, à partir de septembre 2026.}
 
 
-\vspace{-0.05cm}
+\vspace{0pt}
 
 %-----------FORMATION-----------------
 \section{\textcolor{mydarkgreen}{\textbf{FORMATION}}}
@@ -182,9 +184,9 @@
 \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{0.24\textwidth}}
   \begin{minipage}[t]{\linewidth}\raggedright
   \textbullet\ \textbf{Institut Polytechnique de Paris (IPP) - ENSTA}\\
-  \textit{\footnotesize 2e école d'ingénieurs en France (L'Étudiant 2026) ; IPP classé 41e mondial (QS 2026)}\\
+  %\textit{\footnotesize 2e école d'ingénieurs en France (L'Étudiant 2026) ; IPP classé 41e mondial (QS 2026)}\\
   \textit{\footnotesize Diplôme d'Ingénieur - Master of Science in Engineering - Axé sur IA}\\
-  \textit{\footnotesize Cours Pertinents : Machine Learning, Statistique, Reconnaissance d'images, Modèles neurocomputationnels}
+  \textit{\footnotesize Cours Pertinents : Machine Learning, Reconnaissance d'images, Systèmes Parallèles et Distribués}
   \end{minipage}
   &
   \begin{minipage}[t]{\linewidth}\raggedleft
@@ -196,7 +198,7 @@
   \textbullet\ \textbf{Universidad Nacional de Colombia (UNAL)}\\
   \textit{\footnotesize 12e en Amérique latine (QS Latin America 2026)}\\
   \textit{\footnotesize Ingénierie des Systèmes et Informatique}\\
-  \textit{\footnotesize Cours Pertinents : Systèmes multi-agents, Modèles stochastiques, Optimisation}
+  \textit{\footnotesize Cours Pertinents : Algorithmes et Structures de données, Systèmes multi-agents, Réseaux informatiques}
   \end{minipage}
   &
   \begin{minipage}[t]{\linewidth}\raggedleft
@@ -216,7 +218,7 @@
   \end{minipage}
 \end{tabularx}
 
-\vspace{0cm}
+\vspace{0.07cm}
 %--------DISTINCTIONS------------
 \section{\textcolor{mydarkgreen}{\textbf{DISTINCTIONS}}}
 
@@ -242,7 +244,7 @@
 \end{tabularx}
 
 
-\vspace{0cm}
+\vspace{0.07cm}
 %-----------EXPERIENCE-----------------
 \section{\textcolor{mydarkgreen}{\textbf{EXPÉRIENCE PROFESSIONNELLE}}}
   \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{0.4\textwidth}}
@@ -277,7 +279,6 @@
 
     %------------------------------------
     
-    
     \begin{minipage}[t]{\linewidth}\raggedright
       \textbullet\ \textbf{APEDYS91}\\
       \textit{\footnotesize Machine Learning / NLP Engineer}\\
@@ -285,18 +286,12 @@
     &
     \begin{minipage}[t]{\linewidth}\raggedleft 
       \textbf{Paris, France}\\
-      {\footnotesize\textit{Octobre 2025 - Présent}}
+      {\footnotesize\textit{Octobre 2025 - Février 2026}}
     \end{minipage}\\
 
     \multicolumn{2}{l}{
     \begin{minipage}[t]{\linewidth}\raggedright
-        \indentbox{\footnotesize \textbf{- Développement IA et NLP : } Application locale de 
-        correction de texte en français basée sur un \textbf{pipeline 
-        hybride règles \& LLMs (LanguageTool \& Mistral / Gemma).}
-        Définition de guardrails robustes (\textbf{NER avec spaCy}, contrôle 
-        des entités/nombres et du ratio de nouveaux tokens, sélection dynamique du modèle 
-        selon la RAM/VRAM) afin de garantir la fiabilité et d'éviter l'insertion d'informations 
-        étrangères au texte original.}
+        \indentbox{\footnotesize \textbf{- Orchestration LLM \& NLP : } Pipeline hybride de correction de texte combinant règles \textbf{(LanguageTool)} et LLMs génératifs \textbf{(Mistral, Gemma)} ; guardrails NER spaCy, contrôle des entités/tokens, sélection dynamique du modèle selon RAM/VRAM pour garantir fiabilité et conformité.}
     \end{minipage}
     }\\
 
@@ -321,18 +316,7 @@
 
     \multicolumn{2}{l}{
       \begin{minipage}[t]{\linewidth}\raggedright
-        \indentbox{\footnotesize \textbf{- Vision par Ordinateur (OpenCV, NumPy, Mathématiques) : }Amélioration d'une ligne de post-traitement pour la détection 
-        de voies et de lignes de marquage au sol, améliorant la vitesse 
-        de \textbf{50 \% et la précision de 60 \%}. Application de techniques 
-        \textbf{d'apprentissage automatique (clustering non supervisé)} afin d'améliorer 
-        la robustesse et les performances du modèle.}
-      \end{minipage}
-    }\\
-
-    \multicolumn{2}{l}{
-      \begin{minipage}[t]{\linewidth}\raggedright
-        \indentbox{\footnotesize \textbf{- Analyse de données et Abstraction : }Génération de trajectoires de roue (WheelPath) et corrélation des zones de détérioration, 
-        renforçant la performance globale du système \textbf{(+10 \% de taux de satisfaction utilisateur)}.}
+        \indentbox{\footnotesize \textbf{- Vision par Ordinateur (OpenCV, NumPy, Mathématiques) : }Optimisation du post-traitement pour voies/marquages routiers (\textbf{+50 \% vitesse, +60 \% précision}) et génération de trajectoires WheelPath pour corréler les détériorations.}
       \end{minipage}
     }\\
 
@@ -340,7 +324,7 @@
   \end{tabularx}
 
 
-\vspace{0cm}
+\vspace{0.07cm}
 %%------------------------------
 %%------------------------------
 %%------------------------------
@@ -349,55 +333,27 @@
   \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{0.01\textwidth}}
   
     \begin{minipage}[t]{\linewidth}\raggedright
-      \textbullet\ \textbf{"Tameo" - Vision par ordinateur (projet en cours)}\\
+      \textbullet\ \textbf{"Tameo" - Vision embarquée pour système autonome (projet en cours)}\\
       \textit{\footnotesize Python, PyTorch, YOLO, ZED, DWA, apprentissage supervisé, détection/segmentation}\\
-      \indentbox{\footnotesize Développement du système de vision par 
-      ordinateur d'un bateau de classe IA dans le cadre 
-      du Monaco Energy Boat Challenge 2026.}\\
-      \indentbox{\footnotesize Pipeline de vision pour la détection et la décision de mouvement; fine-tuning sur datasets spécialisés, data augmentation et comparaison de modèles, avec amélioration des métriques mAP, F1, précision/rappel d'environ 80 \% à 90 \%.}\\
+      \indentbox{\footnotesize Pipeline de vision pour la détection et la décision de mouvement d'un bateau autonome; fine-tuning sur datasets spécialisés, data augmentation et comparaison de modèles, avec amélioration des métriques mAP, F1, précision/rappel d'environ 80 \% à 90 \%.}\\
     \end{minipage}
     &
     \begin{minipage}[t]{\linewidth}\raggedleft %Texte here
     \end{minipage}\\
 
     \begin{minipage}[t]{\linewidth}\raggedright
-      \textbullet\ \textbf{Slow -- Application de bureau pour l'analyse vidéo du trafic}\\
-      \textit{\footnotesize Python, Tkinter, OpenCV, MySQL, PyMySQL, Matplotlib, PIL/Pillow, Programmation orientée objet}\\
-      \indentbox{\footnotesize \textbf{- Vision par ordinateur et suivi de véhicules : } Conception d'une application desktop permettant d'analyser des vidéos de circulation, de suivre des véhicules en mouvement et d'estimer leur vitesse à partir d'un pipeline de traitement vidéo avec OpenCV.}\\
-      \indentbox{\footnotesize \textbf{- Interface, données et reporting : } Développement d'une interface graphique avec authentification, gestion des utilisateurs, voies, véhicules et historiques de vidéos, avec stockage MySQL et visualisation des vitesses détectées via Matplotlib. 
-      \href{https://github.com/JavierTarazona06/slow}{\textcolor{blue}{\underline{Plus d'informations}}}.}
+      \textbullet\ \textbf{Slow - Application de bureau pour l'analyse vidéo du trafic}\\
+      \textit{\footnotesize Python, Tkinter, OpenCV, MySQL, PyMySQL, Matplotlib, PIL/Pillow, POO}\\
+      \indentbox{\footnotesize Application desktop pour analyser des vidéos de circulation, suivre des véhicules et estimer leur vitesse avec OpenCV; interface Tkinter avec authentification, gestion des données MySQL et visualisation Matplotlib. \href{https://github.com/JavierTarazona06/slow}{\textcolor{blue}{\underline{Plus d'informations}}}.}\\
     \end{minipage}
     &
     \begin{minipage}[t]{\linewidth}\raggedleft %Texte here
     \end{minipage}\\
 
     \begin{minipage}[t]{\linewidth}\raggedright
-      \textbullet\ \textbf{Segmentation de peau par apprentissage statistique -- Vision par ordinateur}\\
-      \textit{\footnotesize Python, OpenCV, NumPy, scikit-learn, Matplotlib, K-Means, Gaussian Naive Bayes, QDA, RGB/HSV/YCrCb}\\
-      \indentbox{\footnotesize \textbf{- Traitement d'images et extraction de caractéristiques : } Développement d'un pipeline de segmentation pixel à pixel pour analyser des images de visages à partir d'espaces colorimétriques RGB, HSV, YCrCb et de descripteurs Cb-Cr enrichis par le gradient de luminance.}\\
-      \indentbox{\footnotesize \textbf{- Apprentissage supervisé et non supervisé : } Comparaison de classificateurs bayésiens supervisés, notamment Gaussian Naive Bayes et QDA, avec une approche K-Means non supervisée afin d'extraire des masques de peau et visualiser les résultats sur des images de test. 
-      \href{https://github.com/JavierTarazona06/Vision_LocalFeatures_BayesianClassification_KMeans/blob/main/docs/rappport/rap.pdf}{\textcolor{blue}{\underline{Plus d'informations}}}.}
-    \end{minipage}
-    &
-    \begin{minipage}[t]{\linewidth}\raggedleft %Texte here
-    \end{minipage}\\
-
-    \begin{minipage}[t]{\linewidth}\raggedright
-      \textbullet\ \textbf{ORIUN -- Plateforme web de gestion des candidatures à la mobilité internationale}\\
-      \textit{\footnotesize Python, Django REST Framework, PostgreSQL, Next.js, React, TailwindCSS, Docker, Vercel, Google Cloud APIs, SCRUM}\\
-      \indentbox{\footnotesize \textbf{- Développement full-stack : } Conception d'une plateforme web centralisée permettant aux étudiants de consulter les appels à candidatures, soumettre leurs dossiers, suivre l'état de leur candidature et recevoir des notifications liées au processus.}\\
-      \indentbox{\footnotesize \textbf{- Back-end et gestion des données : } Implémentation d'une API REST avec Django, authentification JWT, modules CRUD pour les appels, candidatures, étudiants et employés, ainsi que génération de rapports et statistiques pour l'aide à la décision administrative.}\\
-      \indentbox{\footnotesize \textbf{- Déploiement et intégration : } Front-end développé avec Next.js/React et déployé sur Vercel ; back-end conteneurisé avec Docker et intégré à des services Google Cloud pour la gestion de ressources. 
-      \href{https://github.com/JavierTarazona06/ORIUN_back}{\textcolor{blue}{\underline{Plus d'informations}}}.}
-    \end{minipage}
-    &
-    \begin{minipage}[t]{\linewidth}\raggedleft %Texte here
-    \end{minipage}\\
-
-    \begin{minipage}[t]{\linewidth}\raggedright
-      \textbullet\ \textbf{"Sharp Sight" - Comparateur d'offres technologiques}\\
-      \textit{\footnotesize Python, FastAPI, Selenium, pandas, API REST, web scraping, Vercel}\\
-      \indentbox{\footnotesize Développement d'un backend de comparaison de prix pour dispositifs technologiques, intégrant un pipeline de collecte automatisée d'offres depuis plusieurs sites e-commerce colombiens. Mise en place de modules de scraping, nettoyage et structuration des données, filtrage déterministe par correspondance de chaînes, catégorisation des produits, endpoints REST avec FastAPI et configuration de déploiement web. \href{https://github.com/JavierTarazona06/SharpSight}{\textcolor{blue}{\underline{Plus d'informations}}}.}
+      \textbullet\ \textbf{"Sharp Sight" -- Comparateur de prix via API REST}\\
+      \textit{\footnotesize Python, FastAPI, Selenium, pandas, REST API, web scraping, Vercel}\\
+      \indentbox{\footnotesize Backend de comparaison de prix pour dispositifs technologiques : pipeline automatisé de collecte, filtrage et catégorisation des offres e-commerce, \textbf{endpoints REST} avec FastAPI et déploiement cloud. \href{https://github.com/JavierTarazona06/SharpSight}{\textcolor{blue}{\underline{Plus d'informations}}}.}
     \end{minipage}
     &
     \begin{minipage}[t]{\linewidth}\raggedleft %Texte here
@@ -411,9 +367,9 @@
 %--------EXPERTISE------------
 %\section{\textcolor{mydarkgreen}{\textbf{p}}}
 
-\vspace{4pt}
+\vspace{2pt}
 \noindent\rule{\textwidth}{0.4pt}
-\vspace{0.4pt}
+\vspace{0pt}
 
 % Mantener cada título en la misma minipage que su lista preserva el orden al extraer texto del PDF.
 \noindent
@@ -422,8 +378,7 @@
   \textbf{\underline{Compétences techniques}}\\[-2pt]
   {\scriptsize
     \begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt,topsep=0pt,partopsep=0pt]
-      \item \textbf{Outils d'IA :} Python, Scikit-Learn, OpenCV, NumPy, 
-        Pandas, spaCy, LanguageTool, Llama
+      \item \textbf{Outils d'IA :} Python, PyTorch, OpenCV, NumPy, spaCy, LanguageTool, LLMs (Llama, Mistral, Gemma), Vision Transformers, API REST (FastAPI)
       \item \textbf{Programmation, Logiciels et Cloud :} Google Cloud Platform (GCP), Docker, Django, FastAPI, 
         React, JavaScript, C++/C, Java, SQL/NoSQL, Packagings et distribution sous Windows (PyInstaller, Inno Setup)
       \item \textbf{Méthodologies :} Agile (SCRUM), Git/GitHub, CI/CD, architecture logicielle
