@@ -100,6 +100,17 @@ Nous sommes un employeur garantissant l'égalité des chances et nous sommes fie
 
 Le groupe Société Générale a à coeur que les personnes qui nous rejoignent agissent avec éthique et responsabilité pour une culture de performance durable. Les informations mentionnées dans votre candidature peuvent potentiellement être vérifiées dans le respect du cadre légal, à tout moment pendant le processus de recrutement.
 
+---
+
+# Questions a faire
+
+1. Quels seraient les premiers cas d’usage sur lesquels l’alternant pourrait intervenir ?
+2. Les projets sont-ils plutôt orientés prototypage, industrialisation, ou les deux ?
+3. Quels outils utilisez-vous aujourd’hui pour le suivi des expérimentations et le déploiement des modèles ?
+4. Comment se fait la collaboration entre le DataLab, les ML engineers et les équipes métier ?
+5. Quelles seraient vos attentes principales après les trois premiers mois d’alternance ?
+
+
 ----
 
 Offres - Societe Generale
@@ -172,3 +183,4 @@ Diversité et inclusion
 Nous sommes un employeur garantissant l'égalité des chances et nous sommes fiers de faire de la diversité une force pour notre entreprise. Le groupe s’engage à reconnaître et à promouvoir tous les talents, quels que soient leurs croyances, âge, handicap, parentalité, origine ethnique, nationalité, identité de genre, orientation sexuelle, appartenance à une organisation politique, religieuse, syndicale ou à une minorité, ou toute autre caractéristique qui pourrait faire l’objet d’une discrimination.
 Transparence et responsabilité
 Le groupe Société Générale a à coeur que les personnes qui nous rejoignent agissent avec éthique et responsabilité pour une culture de performance durable. Les informations mentionnées dans votre candidature peuvent potentiellement être vérifiées dans le respect du cadre légal, à tout moment pendant le processus de recrutement.
+
