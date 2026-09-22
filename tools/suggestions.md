@@ -61,6 +61,8 @@ Un recruteur humain qui voit `XXXXXX` écarte le dossier immédiatement.
 
 ## 2. Le nom et l'e-mail fusionnent sur une seule ligne
 
+- Solved
+
 **Preuve** — première ligne du flux de texte (`-raw`, `-table` et `-simple` donnent le même résultat) :
 
 ```
@@ -106,6 +108,8 @@ contrairement à un simple espace, qui fusionne les champs.
 
 ## 3. Le numéro de téléphone est dans un format invalide
 
+- Solved
+
 **Preuve** : `+33 07 46 36 97 75`
 
 L'indicatif pays `+33` **ne peut pas** être suivi du `0` national. Le numéro correct est
@@ -120,6 +124,8 @@ cette chaîne, ce qui peut coûter un rappel.
 # 🟠 Important — perte de mots-clés et de dates
 
 ## 4. La mise en page à deux colonnes désaligne les dates d'une ligne
+
+- Solved
 
 C'est le défaut le plus insidieux, parce qu'il est **invisible à l'œil** : le PDF est parfait à l'écran.
 
@@ -179,6 +185,8 @@ Appliquer la même transformation aux sections **EXPÉRIENCE PROFESSIONNELLE** (
 
 ## 5. La césure LaTeX détruit le mot-clé « luminance »
 
+- Solved
+
 **Preuve** — projet de segmentation de peau, le mot est coupé en fin de ligne :
 
 ```
@@ -205,6 +213,8 @@ Après correction : **0 mot coupé** (contre 1 avant), et `luminance` redevient 
 `\sloppy` évite les débordements de marge que la désactivation de la césure pourrait créer.
 
 ## 6. L'apostrophe typographique casse 11 mots-clés français
+
+- Solved
 
 **Preuve** — inventaire des caractères non-ASCII du texte extrait :
 
@@ -241,6 +251,8 @@ sans erreur, `d'Ingénieur`, `d'IA` et `CENTRES D'INTERET` redeviennent tous tro
 
 ## 7. Les plages de dates ne sont pas exploitables par un parseur
 
+- Solved
+
 Trois problèmes distincts se cumulent :
 
 **a) Le tiret demi-cadratin** — 9 occurrences de `–` (U+2013) comme séparateur :
@@ -276,6 +288,8 @@ plage canonique `Mois AAAA - Mois AAAA`, et garder le total en texte :
 
 ## 8. Les métadonnées du PDF sont entièrement vides
 
+- Solved
+
 **Preuve** — `pdfinfo` :
 
 ```
@@ -293,7 +307,7 @@ Laisser ces champs vides, c'est renoncer gratuitement à un signal.
 
 ```latex
 \hypersetup{
-  pdftitle={Javier Andres TARAZONA JIMENEZ - CV - Data Science / Machine Learning},
+  pdftitle={Javier Andres TARAZONA JIMENEZ - CV - Data Science / Machine Learning / Software Engineering},
   pdfauthor={Javier Andres TARAZONA JIMENEZ},
   pdfsubject={Stage de fin d'etude - Intelligence Artificielle},
   pdfkeywords={Machine Learning, Deep Learning, Computer Vision, NLP, Python,
@@ -304,6 +318,8 @@ Laisser ces champs vides, c'est renoncer gratuitement à un signal.
 Après application, `pdfinfo` renvoie bien `Title`, `Author` et `Keywords` renseignés.
 
 ## 9. 81,5 % du texte est sous 9 pt
+
+- Solved
 
 **Preuve** — distribution mesurée des tailles de glyphes :
 
@@ -324,9 +340,11 @@ est réel**, et un ATS en repli OCR (CV réimprimé/scanné) dégrade nettement 
 
 **Correctif** — passer le corps en 9 pt minimum. Remplacer `\scriptsize` par `\footnotesize`
 dans la section compétences (ligne ~398), et envisager `\documentclass[a4paper,11pt]`.
-Si la place manque, gagnez-la en supprimant la photo (point 11) plutôt qu'en réduisant le corps.
+Si la place manque, gagnez-la en supprimant la photo (point 11) plutôt qu'en réduisant le corps. (Dans ce cas commentez les lignes de la photo du latex code)
 
 ## 10. Accents manquants dans deux titres de section
+
+- Solved
 
 `COMPETENCES TECHNIQUES` → `COMPÉTENCES TECHNIQUES`
 `CENTRES D'INTERET` → `CENTRES D'INTÉRÊT`
