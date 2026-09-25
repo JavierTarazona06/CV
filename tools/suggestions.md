@@ -359,6 +359,8 @@ déjà canoniques. ✅
 
 ## 11. Photo intégrée dans l'en-tête
 
+- Solved
+
 **Preuve** — `pdfimages` : une image JPEG 400×400 px, RGB, 36,6 Ko, ancrée dans l'en-tête.
 
 En France la photo reste légale et courante, mais pour un pipeline ATS elle n'apporte
@@ -373,6 +375,8 @@ les envois directs à un recruteur.
 
 ## 12. Les distinctions se lisent comme une seule chaîne
 
+- Solved
+
 **Preuve** — le `\quad` séparateur disparaît à l'extraction :
 
 ```
@@ -384,6 +388,8 @@ Excellence académique UNAL - Exonération des frais de scolarité
 visible — `\textbullet{}` ou ` -- ` — pour séparer le prix de l'organisme émetteur.
 
 ## 13. Format de page Letter au lieu d'A4
+
+- Solved
 
 **Preuve** — `pdfinfo` : `Page size: 612 x 792 pts (letter)`.
 
@@ -411,6 +417,8 @@ Corriger en `\documentclass[a4paper,...]` ; l'impression et les aperçus RH sero
 # Plan d'action
 
 ## Étape 1 — bloc de préambule (testé, compile, reste sur 1 page)
+
+- Solved
 
 À insérer juste avant `\pagestyle{empty}` dans `fr/Javier_TARAZONA_CV_fr.tex` :
 
@@ -445,24 +453,26 @@ Corriger en `\documentclass[a4paper,...]` ; l'impression et les aperçus RH sero
 
 ## Étape 2 — corrections de contenu (5 minutes)
 
-- [ ] Remplacer `XXXXXX` par l'intitulé exact de l'offre *(point 1)*
-- [ ] Téléphone : `+33 07 ...` → `+33 7 46 36 97 75` *(point 3)*
-- [ ] Remplacer les 9 `–` (U+2013) par `-` dans toutes les plages de dates *(point 7a/7b)*
-- [ ] Scinder la ligne Engin A.I en deux plages canoniques *(point 7c)*
-- [ ] Accentuer `COMPÉTENCES TECHNIQUES` et `CENTRES D'INTÉRÊT` *(point 10)*
-- [ ] Ajouter un délimiteur dans les distinctions *(point 12)*
+- [X] Remplacer `XXXXXX` par l'intitulé exact de l'offre *(point 1)*
+- [X] Téléphone : `+33 07 ...` → `+33 7 46 36 97 75` *(point 3)*
+- [X] Remplacer les 9 `–` (U+2013) par `-` dans toutes les plages de dates *(point 7a/7b)*
+- [X] Scinder la ligne Engin A.I en deux plages canoniques *(point 7c)*
+- [X] Accentuer `COMPÉTENCES TECHNIQUES` et `CENTRES D'INTÉRÊT` *(point 10)*
+- [X] Ajouter un délimiteur dans les distinctions *(point 12)*
 
 ## Étape 3 — restructuration de la mise en page (30 minutes)
 
-- [ ] En-tête linéaire, nom seul sur sa ligne *(point 2)*
-- [ ] FORMATION en flux simple colonne *(point 4)*
-- [ ] EXPÉRIENCE PROFESSIONNELLE en flux simple colonne *(point 4)*
-- [ ] LANGUES sur une seule ligne continue *(point 4)*
-- [ ] `\scriptsize` → `\footnotesize` dans les compétences *(point 9)*
-- [ ] `letterpaper` → `a4paper` *(point 13)*
-- [ ] Produire une variante sans photo pour les dépôts ATS *(point 11)*
+- [X] En-tête linéaire, nom seul sur sa ligne *(point 2)*
+- [X] FORMATION en flux simple colonne *(point 4)*
+- [X] EXPÉRIENCE PROFESSIONNELLE en flux simple colonne *(point 4)*
+- [X] LANGUES sur une seule ligne continue *(point 4)*
+- [X] `\scriptsize` → `\footnotesize` dans les compétences *(point 9)*
+- [X] `letterpaper` → `a4paper` *(point 13)*
+- [X] Produire une variante sans photo pour les dépôts ATS *(point 11)*
 
 ## Étape 4 — enrichissement des mots-clés (recommandé)
+
+- Solved
 
 La section COMPÉTENCES TECHNIQUES est celle que les ATS pondèrent le plus. Or plusieurs
 compétences réelles n'y figurent **que** dans les puces d'expérience, où elles pèsent moins :
@@ -478,6 +488,8 @@ et detection d'objets, apprentissage auto-supervise\par
 ```
 
 ## Étape 5 — revérifier
+
+- Solved
 
 Après recompilation, relancer les trois extractions et confirmer que la première ligne
 contient le nom **seul**, et que chaque date est adjacente au bon employeur :
