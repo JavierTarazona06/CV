@@ -1,11 +1,18 @@
-CV FILE: fr\1-TARAZONA-datadog-datascience.tex
-OFFER: fr\1-datadog-datascience.md
+CV FILE: fr\Javier_TARAZONA_CV_fr.tex
+
+OUTPUT-FOLDER: en\1-datadog-applied-science
+
+OFFER: OUTPUT-FOLDER/offer.md
+
 LANGUAGE: English
+
 LEGACY FILE: \legacy\
+
 COURSES: \cours\
+
 PROJECTS: \projects\
 
-Adapt **CV FILE** to the job/internship offer provided in **OFFER**, and write the final CV in **LANGUAGE**.
+Adapt **CV FILE** to the job/internship offer provided in **OFFER**, and write the final CV in **LANGUAGE** at **OUTPUT-FOLDER** in a new .tex file.
 
 The goal is to maximize the CV's relevance to the offer while remaining completely truthful.
 
