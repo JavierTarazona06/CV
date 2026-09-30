@@ -52,9 +52,9 @@ When adapting the CV:
 
 Workday autofills its "Expérience professionnelle" and "Formation" forms from the CV, so each entry must provide its fields unambiguously.
 
-* Experience entry: `Organisation • City, Country • MM/AAAA - MM/AAAA` on one line, the job title alone on the next line, then the bullets. Education entry: `School • City, Country • MM/AAAA - MM/AAAA`, then the degree name and field of study on the next line.
-* One job title and one date range per entry. When the same employer has several periods or titles (for example Engin A.I, 01/2024 - 07/2024 and 02/2025 - 06/2025), write a separate entry for each, each with its own title line, and put each bullet under the period it belongs to. If the bullets cannot be split, put them under the most recent period. Never write ranges like `Janvier - Juillet 2024 et Février - Juin 2025`.
-* Write every date as `MM/AAAA - MM/AAAA` (English: `MM/YYYY - MM/YYYY`). Write an ongoing period as `MM/AAAA - Présent` (English: `Present`) and a future end date with its expected month (`09/2025 - 09/2027`). Numeric dates parse the same in every language. French month names with accents (Février, Août, Décembre) are not guaranteed to parse in Workday. Do not use month names, seasons, years alone, 2-digit years, or mixed formats.
+* Experience entry: `Organisation • City, Country • AAAA/MM - AAAA/MM` on one line, the job title alone on the next line, then the bullets. Education entry: `School • City, Country • AAAA/MM - AAAA/MM`, then the degree name and field of study on the next line.
+* One job title and one date range per entry. When the same employer has several periods or titles (for example Engin A.I, 2024/01 - 2024/07 and 2025/02 - 2025/06), write a separate entry for each, each with its own title line, and put each bullet under the period it belongs to. If the bullets cannot be split, put them under the most recent period. Never write ranges like `Janvier - Juillet 2024 et Février - Juin 2025`.
+* Write every date as year then month, `AAAA/MM - AAAA/MM` (English: `YYYY/MM - YYYY/MM`), with a 4-digit year and a 2-digit month (`2025/09`, not `2025/9`). Write an ongoing period as `AAAA/MM - Présent` (English: `Present`) and a future end date with its expected month (`2025/09 - 2027/09`). Numeric dates parse the same in every language. French month names with accents (Février, Août, Décembre) are not guaranteed to parse in Workday. Do not use month names, seasons, years alone, 2-digit years, or mixed formats.
 * Use `City, Country` for locations, with the country written in full (`Palaiseau, France`, `Bogotá, Colombie`).
 
 *Keywords and wording*
@@ -91,7 +91,7 @@ At the end, compile the PDF and verify it:
    * no characters are missing or garbled (accents, bullets, `+`, `%`, `/`), and there are no ligature characters (`ﬁ`, `ﬂ`, `ﬀ`);
    * no keywords are split across lines, every link shows its URL, and no XXXXXX placeholder remains.
 3. **Workday autofill simulation:** using only the extracted text, fill in the fields Workday would autofill:
-   * each experience: title, company, location, start `MM/AAAA`, end `MM/AAAA` or "current";
+   * each experience: title, company, location, start `AAAA/MM`, end `AAAA/MM` or "current";
    * each education entry: school, degree, field of study, start, end.
 
    If any field is missing, ambiguous, or attached to the wrong entry, fix the `.tex` file.
