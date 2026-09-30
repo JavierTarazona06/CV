@@ -23,16 +23,16 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: |
-            fr/Javier_TARAZONA_CV_fr.tex
-            en/Javier_TARAZONA_CV_en.tex
+            fr/base/Javier_TARAZONA_CV_fr.tex
+            en/base/Javier_TARAZONA_CV_en.tex
           work_in_root_file_dir: true
 
       - name: Prepare GitHub Pages site
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           mkdir -p site
-          cp fr/Javier_TARAZONA_CV_fr.pdf site/Javier_TARAZONA_CV_fr.pdf
-          cp en/Javier_TARAZONA_CV_en.pdf site/Javier_TARAZONA_CV_en.pdf
+          cp fr/base/Javier_TARAZONA_CV_fr.pdf site/Javier_TARAZONA_CV_fr.pdf
+          cp en/base/Javier_TARAZONA_CV_en.pdf site/Javier_TARAZONA_CV_en.pdf
           cat > site/index.html <<'EOF'
           <!doctype html>
           <html lang="es">
@@ -121,8 +121,8 @@ jobs:
         with:
           name: pdf-output
           path: |
-            fr/Javier_TARAZONA_CV_fr.pdf
-            en/Javier_TARAZONA_CV_en.pdf
+            fr/base/Javier_TARAZONA_CV_fr.pdf
+            en/base/Javier_TARAZONA_CV_en.pdf
 
   deploy_pages:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'

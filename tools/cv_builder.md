@@ -1,6 +1,6 @@
-CV FILE: fr\Javier_TARAZONA_CV_fr.tex
+CV FILE: fr\base\Javier_TARAZONA_CV_fr.tex
 
-OUTPUT-FOLDER: en\1-datadog-applied-science
+OUTPUT-FOLDER: en\2-datadog-software-intern
 
 OFFER: OUTPUT-FOLDER/offer.md
 
