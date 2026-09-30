@@ -1,0 +1,272 @@
+% !TeX root = Javier_TARAZONA_CV_en.tex
+% !TeX program = pdflatex
+%-------------------------
+% Resume in Latex
+% Author : Javier Tarazona
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+\DeclareUnicodeCharacter{00A0}{~}
+\DeclareUnicodeCharacter{2013}{\textendash}
+\DeclareUnicodeCharacter{2014}{\textemdash}
+\DeclareUnicodeCharacter{201C}{``}
+\DeclareUnicodeCharacter{201D}{''}
+\DeclareUnicodeCharacter{2022}{\textbullet}
+\DeclareUnicodeCharacter{25E6}{\textopenbullet}
+% \setlist[itemize]{label=\textbullet, labelsep=0.5em, leftmargin=*} % Moved after \begin{document}
+\usepackage[T1]{fontenc}      % Codificación de salida (acentos y símbolos)
+\usepackage[empty]{fullpage}
+\usepackage[export]{adjustbox}
+\usepackage[pdftex]{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[utf8]{inputenc}   % Lee texto en UTF-8
+\usepackage{array}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{enumitem}         % Control de listas (si no lo tienes ya)
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{verbatim}
+\usepackage{xcolor}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[export]{adjustbox}
+\usepackage{xcolor}
+\usepackage{comment}
+
+\begin{comment}
+\end{comment}
+% --- Codificación y fuentes seguras ---
+\usepackage[utf8]{inputenc}   % Lee texto en UTF-8
+\usepackage[T1]{fontenc}      % Codificación de salida (acentos y símbolos)
+\usepackage{enumitem}         % Control de listas (si no lo tienes ya)
+
+% --- Viñetas limpias y seguras ---
+\setlist[itemize]{label=\textbullet, labelsep=0.5em, leftmargin=*}
+%\end{comment}
+
+% ===== CORRECTIFS ATS =====
+\usepackage[none]{hyphenat}   % point 5 : plus aucun mot-cle coupe
+\sloppy                       %           evite les debordements de marge
+\usepackage{textcomp}         % point 6 : apostrophe ASCII au lieu de U+2019
+\catcode`\'=\active
+\def'{\textquotesingle}
+\hypersetup{                  % point 8 : metadonnees indexables
+  pdftitle={Javier Andres TARAZONA JIMENEZ - CV - Software Engineering Intern},
+  pdfauthor={Javier Andres TARAZONA JIMENEZ},
+  pdfsubject={End-of-studies internship - Software Engineering},
+  pdfkeywords={Software Engineering, Backend, REST API, Python, Java, C++, Docker,
+               Google Cloud, Data Pipelines, Data Structures, Algorithms, Distributed Systems,
+               Performance Optimization, Machine Learning, LLM}
+}
+% ==========================
+
+\pagestyle{empty}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\evensidemargin}{-0.45in}
+\addtolength{\textwidth}{1.15in}
+\addtolength{\topmargin}{-.62in}
+\addtolength{\textheight}{1.20in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\renewcommand{\arraystretch}{0.98}
+
+%\definecolor{mydarkgreen}{RGB}{0, 140, 123}
+\definecolor{mydarkgreen}{RGB}{0, 0, 0}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{mydarkgreen}\titlerule \vspace{-8pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItemCompact}[2]{\item\small{\textbf{#1}: #2}\vspace{-2pt}}
+\newcommand{\resumeItemListStartCompact}{\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt,nolistsep]}
+\newcommand{\resumeItemListEndCompact}{\end{itemize}\vspace{-4pt}}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      	\textbf{#1} & \textbf{\textcolor{mydarkgreen}{#2}} \\
+      	\textit{\footnotesize#3} & \textit{\footnotesize \textcolor{mydarkgreen}{#4}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Indented paragraph helper: \indentbox[ancho]{contenido}
+% Uso: \indentbox{Texto...}  o  \indentbox[1.5em]{Texto...}
+\newcommand{\indentbox}[2][1em]{\hspace*{#1}\parbox{\dimexpr\linewidth-#1\relax}{#2}}
+
+\newlength{\headerPhotoSpace}
+\setlength{\headerPhotoSpace}{0pt}
+\newcommand{\showHeaderPhoto}{%
+  \setlength{\headerPhotoSpace}{0.105\textwidth}%
+  \makebox[0pt][l]{\adjustbox{valign=c}{\includegraphics[width=1.9cm]{../assets/profile-picture/Digital_photoCasual.jpg}}}%
+}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{comment}
+\AddToHookNext{shipout/foreground}{%
+  \put(\dimexpr\paperwidth-0.35cm\relax,-\dimexpr\paperheight-0.35cm\relax){%
+    \makebox(0,0)[rb]{%
+      \begin{minipage}{2.15cm}
+        \centering
+        {\setlength{\fboxsep}{1pt}\colorbox{white}{%
+          \parbox{1.9cm}{\centering\scriptsize\bfseries Scan the QR code \\[-1pt]for the digital version}}}\\[1pt]
+        \includegraphics[width=1.6cm]{qr_CV.png}%
+      \end{minipage}%
+    }%
+  }%
+}
+\end{comment}
+
+% --- Viñetas limpias y seguras ---
+\setlist[itemize]{label=\textbullet, labelsep=0.5em, leftmargin=*}
+
+
+%----------HEADING-----------------
+
+\noindent
+%\showHeaderPhoto% Comment this line out to remove the photo and widen the header.
+\hspace*{\headerPhotoSpace}%
+\begin{minipage}[c]{\dimexpr\textwidth-\headerPhotoSpace\relax}
+  \raggedright
+  {\Large\bfseries\textcolor{mydarkgreen}{Javier Andres TARAZONA JIMENEZ}}\\[2pt]
+  {\footnotesize Grande École Engineering Student (MSc) \textbullet{} Software Engineering, Backend \& Data Pipelines, AI/ML}\\[2pt]
+  {\footnotesize javitar06@gmail.com \textbullet{} +33 7 46 36 97 75 \textbullet{} Massy, Île-de-France, France (91300)}\\[2pt]
+  {\footnotesize\href{https://www.linkedin.com/in/javier-andres-tarazona-jimenez-84b489222/}{\textcolor{blue}{\underline{linkedin.com/in/javier-andres-tarazona-jimenez-84b489222}}} \textbullet{} \href{https://github.com/JavierTarazona06}{\textcolor{blue}{\underline{github.com/JavierTarazona06}}}}
+\end{minipage}
+
+\vspace{0.3cm}
+
+{\centering
+  {\large\bfseries END-OF-STUDIES INTERNSHIP IN SOFTWARE ENGINEERING}\\[1pt]
+  {\normalsize 6 months starting April 2027}\par}
+
+
+\vspace{-0.02cm}
+
+%-----------EDUCATION-----------------
+\section{\textcolor{mydarkgreen}{\textbf{EDUCATION}}}
+{\raggedright
+\textbf{Institut Polytechnique de Paris (IP Paris) - ENSTA} \textbullet{} Paris, France \textbullet{} \textit{\footnotesize September 2025 - 2027 (expected graduation)}\\
+{\footnotesize\textit{Diplôme d'Ingénieur - Master of Science in Engineering}}\\
+{\footnotesize Relevant coursework: Parallel \& Distributed Systems, Operating Systems, Computer Networks, Databases, Software Engineering \& OOP}\\[4pt]
+
+\textbf{Universidad Nacional de Colombia (UNAL)} \textbullet{} Bogotá, Colombia \textbullet{} \textit{\footnotesize January 2021 - July 2025}\\
+{\footnotesize\textit{Systems and Computer Engineering. 12th university in Latin America (QS Latin America 2026)}}\\
+{\footnotesize Relevant coursework: Data Structures, Algorithms, Theory of Computation, Discrete Mathematics, Software Engineering I \& II}\\[4pt]
+
+\textbf{University of Saskatchewan} \textbullet{} Saskatoon, Canada \textbullet{} \textit{\footnotesize September 2024 - December 2024}\\
+{\footnotesize\textit{Academic exchange:} Software Engineering, Algorithms, Operating Systems}\par}
+
+\vspace{0.05cm}
+%--------AWARDS------------
+\section{\textcolor{mydarkgreen}{\textbf{AWARDS}}}
+
+\noindent \textbf{Honorable Mention \textendash{} ICPC Colombia 2023} \textbullet{} {\footnotesize\textit{XXXVII National Programming Marathon ACIS REDIS}}\\[2pt]
+\noindent \textbf{Eiffel Excellence Scholarship} \textbullet{} {\footnotesize\textit{ENSTA - Master 2025-2027}} \\[2pt]
+\noindent \textbf{Academic Excellence} \textbullet{} {\footnotesize\textit{UNAL - Tuition waiver}}\quad 
+
+
+\vspace{0.05cm}
+%-----------EXPERIENCE-----------------
+\section{\textcolor{mydarkgreen}{\textbf{PROFESSIONAL EXPERIENCE}}}
+{\raggedright
+\textbf{ENSTA Paris -- U2IS} \textbullet{} Palaiseau, France \textbullet{} \textit{\footnotesize May 2026 - August 2026}\\
+{\footnotesize\textit{Research Intern in Artificial Intelligence and 3D Vision}}\\[3pt]
+\indentbox{\footnotesize \textbf{- Data generation pipeline:} \textbf{Python/Blender} pipeline automating multi-view rendering, cameras, metadata and dataset generation.}\\
+\indentbox{\footnotesize \textbf{- Deep Learning:} Self-supervised view-prediction pre-training (\textbf{PyTorch}, \textbf{Vision Transformers}) with curriculum learning on 3D shapes.}\\[5pt]
+
+\textbf{APEDYS91} \textbullet{} Paris, France \textbullet{} \textit{\footnotesize October 2025 - February 2026}\\
+{\footnotesize\textit{Machine Learning / NLP Engineer}}\\[3pt]
+\indentbox{\footnotesize \textbf{- AI-powered application:} Local French text-correction app built on a hybrid \textbf{rules \& LLM pipeline} (LanguageTool, Mistral/Gemma).}\\
+\indentbox{\footnotesize \textbf{- Reliability \& resource-aware design:} spaCy NER guardrails, entity/number consistency checks and new-token-ratio control to prevent hallucinated content; \textbf{dynamic model selection based on available RAM/VRAM}.}\\[5pt]
+
+\textbf{Engin A.I} \textbullet{} Colombia - United States \textbullet{} \textit{\footnotesize January - July 2024 and February - June 2025}\\
+{\footnotesize\textit{Software and Computer Vision Engineer (12 months cumulative)}}\\[3pt]
+\indentbox{\footnotesize \textbf{- Software design \& code quality:} Refactored two Python libraries into a modular, object-oriented architecture; \textbf{+70\% refactoring score} (maintainability index, duplication, test coverage, lines of code, cyclomatic complexity).}\\
+\indentbox{\footnotesize \textbf{- Performance optimization} (Python, OpenCV, NumPy)\textbf{:} Optimized the lane/road-marking detection post-processing pipeline (\textbf{+50\% speed, +60\% accuracy}), applying unsupervised clustering to improve robustness.}\\
+\indentbox{\footnotesize \textbf{- Data analysis:} Generated wheel trajectories (WheelPath) and correlated them with road deterioration areas (\textbf{+10\% user satisfaction}).}\par}
+
+
+\vspace{0.05cm}
+%%------------------------------
+%%------------------------------
+%%------------------------------
+\section{\textcolor{mydarkgreen}{\textbf{PROJECTS}}}
+{\raggedright
+\textbf{ORIUN - Full-stack international mobility platform} \textbullet{} \textit{\footnotesize Django REST, PostgreSQL, Next.js/React, Docker, Google Cloud}\\
+\indentbox{\footnotesize \textbf{Back-end:} REST API with JWT authentication, CRUD modules (calls, applications, students, staff), status tracking, notifications, and reports/statistics for administrative decision support.}\\
+\indentbox{\footnotesize \textbf{Deployment:} back-end containerized with \textbf{Docker} and integrated with \textbf{Google Cloud}; Next.js/React front-end on Vercel. \href{https://github.com/JavierTarazona06/ORIUN_back}{\textcolor{blue}{\underline{GitHub}}}}\\[3pt]
+
+\textbf{"Sharp Sight" - Data collection \& price comparison backend} \textbullet{} \textit{\footnotesize Python, FastAPI, Selenium, pandas}\\
+\indentbox{\footnotesize Automated \textbf{data ingestion pipeline} from several e-commerce sites: web scraping, data cleaning and structuring, product categorization and deterministic filtering, exposed through \textbf{FastAPI REST endpoints} and deployed on the web. \href{https://github.com/JavierTarazona06/SharpSight}{\textcolor{blue}{\underline{GitHub}}}}\\[3pt]
+
+\textbf{"Tameo" - Embedded vision for an autonomous boat} \textbullet{} \textit{\footnotesize September 2025 - June 2027}\\
+\textit{\footnotesize Team of 5; member (2025-2026), \textbf{project lead} (2026-2027). Monaco Energy Boat Challenge - AI Class. Python, PyTorch, YOLO, ZED}\\
+\indentbox{\footnotesize Vision pipeline for detection and motion decision; benchmarked and fine-tuned models on specialized datasets with data augmentation, raising mAP, F1 and precision/recall from about 80\% to 90\%.}\\[3pt]
+
+\textbf{"Slow" - Desktop application for traffic video analysis} \textbullet{} \textit{\footnotesize Team of 5, 6 months. Python (OOP), OpenCV, MySQL, Tkinter}\\
+\indentbox{\footnotesize Video processing pipeline to track vehicles and estimate their speed; GUI with authentication and user management, MySQL persistence of lanes, vehicles and video history, and Matplotlib reporting. \href{https://github.com/JavierTarazona06/slow}{\textcolor{blue}{\underline{GitHub}}}}\par}
+
+
+\vspace{0.05cm}
+%-----------SKILLS & LANGUAGES-----------------
+\section{\textcolor{mydarkgreen}{\textbf{SKILLS \& LANGUAGES}}}
+{\footnotesize
+\setlength{\parindent}{0pt}
+\hangindent=1.4em\hangafter=1 \textbf{Programming:} Python, Java, C++/C, JavaScript, SQL \quad \textbf{Frontend:} React, Next.js, TailwindCSS, Tkinter\par
+\hangindent=1.4em\hangafter=1 \textbf{Backend, Cloud \& Data:} FastAPI, Django REST Framework, Docker, Google Cloud (GCP), Vercel, PostgreSQL, MySQL, NoSQL, pandas\par
+\hangindent=1.4em\hangafter=1 \textbf{AI \& ML:} PyTorch, OpenCV, YOLO, Vision Transformers, scikit-learn, spaCy, LLMs (Llama, Mistral, Gemma)\par
+\hangindent=1.4em\hangafter=1 \textbf{Practices:} Git, CI/CD, software architecture, OOP, code quality \& test coverage, SCRUM, Windows packaging (PyInstaller, Inno Setup)\par
+\hangindent=1.4em\hangafter=1 \textbf{Languages:} English (C1 \textendash{} IELTS 2024) \textbullet{} French (B2 \textendash{} DELF 2024) \textbullet{} Spanish (native) \textbullet{} Portuguese (basic)\par
+}
+
+
+%-------------------------------------------
+\end{document}

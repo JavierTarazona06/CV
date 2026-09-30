@@ -1,4 +1,4 @@
-CV FILE: fr\base\Javier_TARAZONA_CV_fr.tex
+CV FILE: en\base\Javier_TARAZONA_CV_en.tex
 
 OUTPUT-FOLDER: en\2-datadog-software-intern
 
