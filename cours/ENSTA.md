@@ -42,3 +42,36 @@
 | Category 1 | Category 2 | Category 3 | Category 4 | Category 5 | Category 6 | Category 7 | Category 8 | Category 9 | Category 10 |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 33/33 | 2.5/2.5 | 6/6.5 | 3.5/5 | 1.5/3 | 17.5/29 | 2/2 | 0/12 | - | - |
+
+# Coursework Last Year
+	Code UE	Intitulé UE	Période	Domaine	Etat	Groupe	Coeff.	Note initiale	Note finale	Note finale transposée	ECTS	Asso	CC	DEG	LV	Mob Int	Pr	Pr pro	Sc	Sp	St
+Trier par: 
+Type d'enseignement
+Cours scientifiques
+CSC_5IA02_TA	Programmation par contraintes	3A/Master	CSC			1														
+CSC_5IA05_TA	Apprentissage pour la robotique	3A/Master	CSC																	
+CSC_5IA10_TA	Game theory and multi-agent control	3A/Master				1														
+CSC_5IA13_TA	Maintenance prédictive	3A/Master	CSC			1														
+CSC_5IA21_TA	Machine Learning Operations (MLOps)	3A/Master	CSC			1														
+CSC_5IA23_TA	Deep learning based computer vision	3A/Master	CSC, STIC			1														
+IME_5ISYE_TA	Ingénierie système appliqué à un cas d'é...	3A/Master	PHY			1														
+Droit, Economie, Gestion
+ECO_5EA19_TA	Economie du numérique	3A/Master	ECO			1							0 / 1							
+IME_5EA01_TA	Gestion des ressources humaines et manag...	3A/Master	SHS		5EA01 3	1							0 / 2							
+IME_5SINE_TA	Stratégie industrielle	3A/Master	ECO			1														
+Enseignement spécifique des masters
+APM_5AI04_TP	Probability and Machine Learning	S1																		
+APM_5AI18_TP	Reinforcement learning	S1-S2																		
+CSC_5AI01_TP	Logics and Symbolic AI	S1																		
+CSC_5AI06_TP	Deep learning I	S1																		
+CSC_5AI07_TP	Programming with GPU for Deep Learning	S1-S2																		
+CSC_5AI30_TP	Language Modeling	S1																		
+Langues
+DispAng 3A	Dispense Anglais 3A		LV			1	Validé	Validé		1/1				1 / 1						
+Français_3A	Français 3A		LV			1								0 / 1						
+Projet
+PRJ_5PROJ_TA	3A Projet tutoré	3A/Master				1										0 / 6				
+Stages
+PFE	Projet de fin d'études		AC, APM, CHE, GI, Lasers, NanoSc, Opt. F...			1														0 / 19
+Récapitulatif des crédits acquis et à acquérir
+1 / 1			0 / 3	1 / 2		0 / 6				0 / 19
