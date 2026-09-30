@@ -1,10 +1,10 @@
-CV FILE: en\base\Javier_TARAZONA_CV_en.tex
+CV FILE: fr\base\Javier_TARAZONA_CV_fr.tex
 
-OUTPUT-FOLDER: en\2-datadog-software-intern
+OUTPUT-FOLDER: fr\1-renault-video-manufacture
 
 OFFER: OUTPUT-FOLDER/offer.md
 
-LANGUAGE: English
+LANGUAGE: French
 
 LEGACY FILE: \legacy\
 
@@ -41,3 +41,5 @@ When adapting the CV:
 Maintain the general structure and professional quality of the CV, but you may reorder sections, experiences, projects, skills, or courses when this improves alignment with the offer.
 
 The final output should be the **fully adapted CV**, ready to use for the application.
+
+At the end verify the final PDF generated, if it still has a white space that can be used to sparse content or add valuable information, do it. Priority: Sparse information that confuses an ATS checker or the recruiter reading.
