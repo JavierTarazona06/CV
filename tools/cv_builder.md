@@ -36,36 +36,44 @@ When adapting the CV:
 * Do not add generic soft skills unless they are supported by concrete experience.
 * Avoid keyword stuffing and unnecessary repetition.
 
-**ATS compatibility:** the final CV must read well for a recruiter **and** parse correctly in Applicant Tracking Systems (Workday, Taleo, SmartRecruiters, Greenhouse, etc.). Every piece of information must be extractable as plain text, in the right order, and linked to the right section and entry.
+**ATS compatibility:** the final CV must read well for a recruiter **and** parse correctly in the Applicant Tracking Systems (ATS) most used in France. Every piece of information must be extractable as plain text, in the right order, and attached to the right section and entry.
+
+*Target ATS.* Design for **Workday**, the strictest parser and the dominant ATS in large French groups (Renault applies through `myworkdayjobs.com`). A CV that parses well in Workday also parses in the other common French ATS: **SAP SuccessFactors** (Textkernel parser, supports French), **Oracle Taleo**, and the tools used by SMEs and scale-ups (**Welcome to the Jungle**, **Flatchr**, **Taleez**, **Teamtailor**, **Beetween**, **Cegid Talentsoft**, **SmartRecruiters**). Identify the ATS from the application URL in **OFFER** when possible (`myworkdayjobs.com`, `successfactors`, `taleo.net`, `welcometothejungle.com`, `flatchr.io`, `taleez.com`, `teamtailor.com`, `talent-soft.com`, `smartrecruiters.com`) and report it at the end.
 
 *Layout and structure*
 
 * Use a single-column layout that reads naturally from top to bottom. Do not place content side by side with `tabular`, `tabularx`, `minipage`, `multicol`, text boxes, or positioned elements (`\put`, shipout hooks). If the base CV uses them for content (for example the projects section), rewrite those entries as plain paragraphs formatted like the education/experience entries.
-* Put contact details (full name, email, phone, city, LinkedIn, GitHub) as plain text at the very top of the document body, never in a header/footer, an image, or an icon. Hyperlinks must show the readable URL (for example `github.com/JavierTarazona06`), not a label like "GitHub".
-* Do not convey information only through images, icons, symbols, logos, skill bars, ratings, or color. Keep the photo and QR code disabled unless the offer explicitly asks for a photo.
-* Use standard section headings that an ATS recognizes, written in **LANGUAGE** (French: FORMATION, EXPÉRIENCE PROFESSIONNELLE, PROJETS, COMPÉTENCES TECHNIQUES, LANGUES, DISTINCTIONS; English: EDUCATION, PROFESSIONAL EXPERIENCE, PROJECTS, TECHNICAL SKILLS, LANGUAGES, AWARDS). Do not use creative or merged headings.
+* Put the full name alone on the first line, followed by contact details (email, phone, `City, France`, LinkedIn, GitHub) as plain text in the document body. Never put them in a header/footer (Workday and Taleo often drop them), an image, or an icon.
+* Every hyperlink, including project links, must show the readable URL (for example `github.com/JavierTarazona06/slow`), not a label like "GitHub", because the ATS only keeps the visible text.
+* Do not convey information only through images, icons, symbols, logos, skill bars, ratings, or color. Keep the photo and QR code disabled even though photos are common on French CVs: in Workday a photo breaks the parsing of the text around it.
+* Use standard section headings that an ATS recognizes, each on its own, written in **LANGUAGE**. French: FORMATION, EXPÉRIENCE PROFESSIONNELLE, PROJETS, COMPÉTENCES TECHNIQUES, LANGUES, CERTIFICATIONS, DISTINCTIONS. English: EDUCATION, PROFESSIONAL EXPERIENCE, PROJECTS, TECHNICAL SKILLS, LANGUAGES, CERTIFICATIONS, AWARDS. Do not use creative headings or merged ones such as "COMPÉTENCES & LANGUES".
 
-*Entries and dates*
+*Entries and dates (Workday autofill)*
 
-* Give every entry the same fields in the same order: organization • location • dates on one line, the job title/degree on the next line, then the bullets.
-* Attach every date range directly to a job title. When the same employer has several periods (for example Engin A.I), put them on one line of a single entry (`Janvier 2024 - Juillet 2024, Février 2025 - Juin 2025`) instead of stacking two header lines that look like two jobs without a title.
-* Write dates in one consistent, parseable format: full month + 4-digit year (`Mai 2026 - Août 2026`, `Septembre 2025 - Présent` / `May 2026 - August 2026`, `Present`). Do not use seasons, numeric-only dates, or 2-digit years.
+Workday autofills its "Expérience professionnelle" and "Formation" forms from the CV, so each entry must provide its fields unambiguously.
+
+* Experience entry: `Organisation • City, Country • MM/AAAA - MM/AAAA` on one line, the job title alone on the next line, then the bullets. Education entry: `School • City, Country • MM/AAAA - MM/AAAA`, then the degree name and field of study on the next line.
+* One job title and one date range per entry. When the same employer has several periods or titles (for example Engin A.I, 01/2024 - 07/2024 and 02/2025 - 06/2025), write a separate entry for each, each with its own title line, and put each bullet under the period it belongs to. If the bullets cannot be split, put them under the most recent period. Never write ranges like `Janvier - Juillet 2024 et Février - Juin 2025`.
+* Write every date as `MM/AAAA - MM/AAAA` (English: `MM/YYYY - MM/YYYY`). Write an ongoing period as `MM/AAAA - Présent` (English: `Present`) and a future end date with its expected month (`09/2025 - 09/2027`). Numeric dates parse the same in every language. French month names with accents (Février, Août, Décembre) are not guaranteed to parse in Workday. Do not use month names, seasons, years alone, 2-digit years, or mixed formats.
+* Use `City, Country` for locations, with the country written in full (`Palaiseau, France`, `Bogotá, Colombie`).
 
 *Keywords and wording*
 
-* Replace XXXXXX with the offer's job title, worded as close to the offer as is truthful, since ATS rank on title match.
-* Spell tools, technologies, and skills exactly as the offer does (for example "PyTorch", "C++", "CI/CD", "Computer Vision").
+* Replace XXXXXX with the offer's job title, worded as close to the offer as is truthful, because ATS rank candidates on title match. Keep the meaningful words and drop requisition codes and gender tags (`CS27`, `(H/F)`).
+* Include the French qualification keywords that screeners filter on when they are true and the offer uses them: `Bac+5`, `Diplôme d'Ingénieur`, `école d'ingénieur`, `Grande École`, `stage de fin d'études`, and the availability (start month, duration).
+* Spell tools, technologies, and skills exactly as the offer does (for example "PyTorch", "C++", "CI/CD", "IA générative"). French offers mix French and English terms, so match each term in the language the offer uses, and add the other language in parentheses when the term is central (for example "Vision par ordinateur (Computer Vision)").
 * Each important keyword should appear in the skills section **and** in context in an experience or project bullet that proves it.
 * Write key acronyms in full once next to the acronym (for example "Natural Language Processing (NLP)", "Large Language Models (LLM)"), then use the short form.
-* For a French CV, keep the English technical terms recruiters search for (Machine Learning, Deep Learning, Computer Vision, etc.) when the offer uses them, and add the French equivalent where it helps.
 * List skills as plain comma-separated text grouped by category, with no tables, graphics, or graphic proficiency levels.
+* List languages in their own section, each immediately followed by its level in text: `Anglais : courant (C1 - IELTS 2024)`.
 
 *LaTeX/PDF requirements*
 
 * Keep the ATS fixes already in the preamble (`hyphenat[none]`, `\sloppy`, ASCII apostrophe, `\hypersetup` metadata). Add `\input{glyphtounicode}` and `\pdfgentounicode=1` if they are missing, so that every glyph maps to real Unicode text.
 * Update `\hypersetup` for the offer: set `pdftitle` to the adapted title (no XXXXXX left), and set `pdfsubject` and `pdfkeywords` to the offer's main keywords that actually appear in the CV.
-* Do not split keywords with manual spacing, `~`, `\mbox` tricks, or math-mode symbols (`$\circ$`, `$\rightarrow$`). Use plain text, `-`, `,`, or `\textbullet` as separators.
+* Do not split keywords with manual spacing, `~`, `\mbox` tricks, or math-mode symbols (`$\circ$`, `$\rightarrow$`). Use plain text, `-`, `,`, `:`, or `\textbullet` as separators.
 * Do not shrink text below `\footnotesize` to fit the page. Cut content instead.
+* Keep the output file name in the form `Prenom_NOM_CV_<lang>.pdf` (for example `Javier_TARAZONA_CV_fr.pdf`), with no spaces or accents.
 
 **Critical constraint:** the final CV must fit on **exactly one page or less**. Prioritize relevance and information density rather than trying to preserve every element of the original CV. If fitting on one page conflicts with the ATS rules above, shorten content rather than break the ATS rules.
 
@@ -76,13 +84,24 @@ The final output should be the **fully adapted CV**, ready to use for the applic
 At the end, compile the PDF and verify it:
 
 1. **Page count:** exactly one page.
-2. **ATS parsing check:** extract the text as an ATS would, with `pdftotext -enc UTF-8 <cv>.pdf <cv>.txt` (plain mode, not `-layout`). Read the `.txt` file itself: the Windows console can show accents as `�` even when the extraction is correct. Check that:
-   * the contact information comes first;
+2. **ATS text extraction:** extract the text in two ways, as different ATS parsers do, and save each as a UTF-8 `.txt` file: `pdftotext -enc UTF-8 <cv>.pdf <cv>.txt` (plain mode, not `-layout`), and Python `pdfminer.six` (`from pdfminer.high_level import extract_text`). Read the `.txt` files themselves: the Windows console can show accents as `�` even when the extraction is correct. In both extractions, check that:
+   * the name comes first, followed by the contact information;
    * sections appear in order under their standard headings;
-   * each entry keeps its organization, title, and dates together, with no merged columns or orphaned date lines;
-   * no characters are missing or garbled (accents, bullets, `+`, `%`, `/`);
-   * no keywords are split across lines, and no XXXXXX placeholder remains;
-   * the offer's main keywords appear in the extracted text.
+   * each entry keeps its organization, location, dates, and title together, with no merged columns or orphaned date lines;
+   * no characters are missing or garbled (accents, bullets, `+`, `%`, `/`), and there are no ligature characters (`ﬁ`, `ﬂ`, `ﬀ`);
+   * no keywords are split across lines, every link shows its URL, and no XXXXXX placeholder remains.
+3. **Workday autofill simulation:** using only the extracted text, fill in the fields Workday would autofill:
+   * each experience: title, company, location, start `MM/AAAA`, end `MM/AAAA` or "current";
+   * each education entry: school, degree, field of study, start, end.
 
-   Fix any problem in the `.tex` file, recompile, and check again.
-3. **White space:** if the page still has white space that can be used to space out content or add valuable information, use it. Priority: space out information that is so dense it could confuse an ATS checker or the recruiter reading it.
+   If any field is missing, ambiguous, or attached to the wrong entry, fix the `.tex` file.
+4. **Keyword coverage:** list the offer's 10-15 main keywords and qualifications (including `Bac+5`, degree type, and the job title terms) and confirm that each one appears in the extracted text with the offer's spelling, or state that it is absent because it is not truthful for me.
+
+Fix any problem found in steps 2-4, recompile, and check again.
+
+5. **White space:** if the page still has white space that can be used to space out content or add valuable information, use it. Priority: space out information that is so dense it could confuse an ATS checker or the recruiter reading it.
+
+Finally, give me a short **ATS report**:
+* the detected ATS;
+* the Workday autofill table from step 3, so I can compare it with what the application form fills in;
+* a plain-text list of skills and of languages with their levels, ready to copy into the application form, since Workday does not autofill the Skills and Languages fields.
