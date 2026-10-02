@@ -11,6 +11,8 @@ Locations
 Job Post: Software Engineering Intern
 Paris, France
 
+https://careers.datadoghq.com/detail/8114186/?gh_jid=8114186
+
 We’re looking for Software Engineering Interns to help build and scale the systems that power Datadog’s observability and security platform. Interns contribute directly to real-world engineering challenges across backend, frontend, infrastructure, data engineering, and developer tooling while working alongside experienced engineers and mentors. You’ll help design, build, and improve systems that process and analyze massive volumes of metrics, logs, and application data in real time. Whether you’re interested in distributed systems, Kubernetes, AI-powered products like Bits AI, or developer platform tooling, you’ll work on meaningful projects that deliver impact for customers at global scale.
 
  

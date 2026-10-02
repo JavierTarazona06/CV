@@ -1,0 +1,204 @@
+% !TeX root = Javier_TARAZONA_CV_en.tex
+% !TeX program = pdflatex
+%-------------------------
+% Resume in Latex
+% Author : Javier Tarazona
+% Offer : Datadog - Software Engineering Intern (Paris) - Requisition ID 1065
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+\DeclareUnicodeCharacter{00A0}{~}
+\DeclareUnicodeCharacter{2013}{\textendash}
+\DeclareUnicodeCharacter{2014}{\textemdash}
+\DeclareUnicodeCharacter{201C}{``}
+\DeclareUnicodeCharacter{201D}{''}
+\DeclareUnicodeCharacter{2022}{\textbullet}
+\DeclareUnicodeCharacter{25E6}{\textopenbullet}
+\usepackage[T1]{fontenc}      % Codificación de salida (acentos y símbolos)
+\usepackage[utf8]{inputenc}   % Lee texto en UTF-8
+\usepackage[empty]{fullpage}
+\usepackage[export]{adjustbox}
+\usepackage[pdftex]{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{array}
+\usepackage{comment}
+\usepackage{enumitem}         % Control de listas
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{verbatim}
+\usepackage{xcolor}
+
+% --- Viñetas limpias y seguras ---
+\setlist[itemize]{label=\textbullet, labelsep=0.5em, leftmargin=*}
+
+% ===== CORRECTIFS ATS =====
+\input{glyphtounicode}        % every glyph -> real Unicode text (ligatures decomposed)
+\pdfgentounicode=1
+\usepackage[none]{hyphenat}   % point 5 : plus aucun mot-cle coupe
+\sloppy                       %           evite les debordements de marge
+\usepackage{textcomp}         % point 6 : apostrophe ASCII au lieu de U+2019
+\catcode`\'=\active
+\def'{\textquotesingle}
+\hypersetup{                  % point 8 : metadonnees indexables
+  pdftitle={Javier Andres TARAZONA JIMENEZ - CV - Software Engineering Intern},
+  pdfauthor={Javier Andres TARAZONA JIMENEZ},
+  pdfsubject={Software Engineering Intern - 6-month end-of-studies internship from April 2027 - backend, data pipelines, software design, performance, AI-powered applications},
+  pdfkeywords={Software Engineering Intern, Software Engineering, Computer Science, data structures, algorithms,
+               software design, backend, frontend, data engineering, distributed systems, performance, reliability,
+               Python, C++, Java, SQL, REST API, FastAPI, Django, Docker, Google Cloud, CI/CD, Git,
+               Large Language Models (LLM), AI-powered applications, Diplôme d'Ingénieur, Master of Science in Engineering},
+  pdfborder={0 0 0}           % no box around links (the blue underline is enough)
+}
+% ==========================
+
+\pagestyle{empty}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\evensidemargin}{-0.45in}
+\addtolength{\textwidth}{1.15in}
+\addtolength{\topmargin}{-.62in}
+\addtolength{\textheight}{1.20in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\renewcommand{\arraystretch}{0.98}
+
+%\definecolor{mydarkgreen}{RGB}{0, 140, 123}
+\definecolor{mydarkgreen}{RGB}{0, 0, 0}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{mydarkgreen}\titlerule \vspace{-8pt}]
+
+%-------------------------
+% Custom commands
+
+% Indented paragraph helper: \indentbox[ancho]{contenido}
+% Uso: \indentbox{Texto...}  o  \indentbox[1.5em]{Texto...}
+% [t] + \raggedright + \strut : top-aligned lines, no stretched spaces or overlap.
+\newcommand{\indentbox}[2][1em]{\hspace*{#1}\parbox[t]{\dimexpr\linewidth-#1\relax}{\raggedright #2\strut}}
+
+% Photo and QR code disabled: in Workday a photo breaks the parsing of the text around it.
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+% Name alone on the first line, then contact details as plain text in the body (no header, no minipage).
+
+\noindent{\Large\bfseries\textcolor{mydarkgreen}{Javier Andres TARAZONA JIMENEZ}}\par
+\vspace{3pt}
+\noindent{\footnotesize javitar06@gmail.com \textbullet{} +33 7 46 36 97 75 \textbullet{} Massy, France}\par
+\vspace{1pt}
+\noindent{\footnotesize\href{https://www.linkedin.com/in/javier-andres-tarazona-jimenez-84b489222/}{\textcolor{blue}{\underline{linkedin.com/in/javier-andres-tarazona-jimenez-84b489222}}} \textbullet{} \href{https://github.com/JavierTarazona06}{\textcolor{blue}{\underline{github.com/JavierTarazona06}}}}\par
+
+\vspace{0.12cm}
+
+{\centering
+  {\large\bfseries Software Engineering Intern}\\[2pt]
+  {\footnotesize 6-month end-of-studies internship starting April 2027 \textbullet{} Final-year Grande École engineering student, graduating in 2027}\\[3pt]
+  {\footnotesize\textit{Backend APIs and data pipelines (Python, SQL), software design, performance optimization, AI-powered applications (LLM)}}\par}
+
+\vspace{0.05cm}
+
+%-----------EDUCATION-----------------
+\section{\textcolor{mydarkgreen}{\textbf{EDUCATION}}}
+{\raggedright
+\textbf{ENSTA Paris (Institut Polytechnique de Paris)} \textbullet{} Palaiseau, France \textbullet{} \textit{\footnotesize 2025/09 - 2027/09}\\
+{\footnotesize\textit{Diplôme d'Ingénieur - Master of Science in Engineering, Artificial Intelligence track}}\\[5pt]
+{\footnotesize Coursework: Software Engineering and Object-Oriented Programming, Parallel and Distributed Systems, Computer Networks, Databases}\\[4pt]
+
+\textbf{Universidad Nacional de Colombia (UNAL)} \textbullet{} Bogotá, Colombia \textbullet{} \textit{\footnotesize 2021/01 - 2025/07}\\
+{\footnotesize\textit{Undergraduate engineering program - Systems and Computer Engineering}}\\[5pt]
+{\footnotesize 12th in Latin America (QS 2026). Coursework: Data Structures, Theory of Computation, Discrete Mathematics, Computer Architecture}\\[4pt]
+
+\textbf{University of Saskatchewan} \textbullet{} Saskatoon, Canada \textbullet{} \textit{\footnotesize 2024/09 - 2024/12}\\
+{\footnotesize\textit{Academic exchange - Computer Science: Algorithms, Software Engineering, Operating Systems}}\par}
+
+\vspace{0.05cm}
+%-----------EXPERIENCE-----------------
+\section{\textcolor{mydarkgreen}{\textbf{PROFESSIONAL EXPERIENCE}}}
+{\raggedright
+\textbf{ENSTA Paris - U2IS Laboratory} \textbullet{} Palaiseau, France \textbullet{} \textit{\footnotesize 2026/05 - 2026/08}\\
+{\footnotesize\textit{Research Intern in Artificial Intelligence and 3D Vision}}\\[5pt]
+\indentbox{\footnotesize \textbf{- Data pipeline:} Python pipeline on the Blender Python API generating multi-view 3D training datasets (rendering, cameras, metadata).}\\[1pt]
+\indentbox{\footnotesize \textbf{- Deep Learning:} self-supervised 3D view-prediction pre-training (\textbf{PyTorch}, \textbf{Vision Transformers}), curriculum learning.}\\[4pt]
+
+\textbf{APEDYS91} \textbullet{} Paris, France \textbullet{} \textit{\footnotesize 2025/10 - 2026/02}\\
+{\footnotesize\textit{Machine Learning / NLP Engineer}}\\[5pt]
+\indentbox{\footnotesize \textbf{- AI-powered application:} local French text-correction app combining LanguageTool rules and \textbf{Large Language Models (LLM)}.}\\[1pt]
+\indentbox{\footnotesize \textbf{- Reliability:} spaCy NER guardrails and entity/number checks against hallucinations; runtime model selection from available RAM/VRAM.}\\[4pt]
+
+\textbf{Engin A.I} \textbullet{} Bogotá, Colombia (remote, United States) \textbullet{} \textit{\footnotesize 2025/02 - 2025/06}\\
+{\footnotesize\textit{Software and Computer Vision Engineer}}\\[5pt]
+\indentbox{\footnotesize \textbf{- Software design:} modular object-oriented refactoring of 2 Python libraries, \textbf{+70\% code-quality score} (maintainability, test coverage).}\\[1pt]
+\indentbox{\footnotesize \textbf{- Performance optimization:} \textbf{+50\% speed, +60\% accuracy} in lane and road-marking detection post-processing (OpenCV, NumPy).}\\[1pt]
+\indentbox{\footnotesize \textbf{- Data analysis:} generated wheel trajectories (WheelPath) correlated with road deterioration areas (\textbf{+10\% user satisfaction}).}\\[4pt]
+
+\textbf{Engin A.I} \textbullet{} Bogotá, Colombia (remote, United States) \textbullet{} \textit{\footnotesize 2024/01 - 2024/07}\\
+{\footnotesize\textit{Software and Computer Vision Engineer}}\par}
+
+
+\vspace{0.05cm}
+%-----------PROJECTS-----------------
+\section{\textcolor{mydarkgreen}{\textbf{PROJECTS}}}
+{\raggedright
+\textbf{ORIUN - International mobility application platform} \textbullet{} \href{https://github.com/JavierTarazona06/ORIUN_back}{\textcolor{blue}{\underline{github.com/JavierTarazona06/ORIUN\_back}}}\\
+{\footnotesize\textit{Full-stack web platform - Django REST Framework backend, PostgreSQL, Next.js/React frontend deployed on Vercel, Scrum}}\\[4pt]
+\indentbox{\footnotesize \textbf{Backend:} REST API with JWT authentication, CRUD modules and statistics reports; \textbf{Docker} containers, \textbf{Google Cloud} integration.}\\[3pt]
+
+\textbf{Sharp Sight - Price comparison back end for tech products} \textbullet{} \href{https://github.com/JavierTarazona06/SharpSight}{\textcolor{blue}{\underline{github.com/JavierTarazona06/SharpSight}}}\\[1pt]
+\indentbox{\footnotesize \textbf{Data engineering:} e-commerce offer scraping (Selenium), cleaning and structuring (pandas), categorization, \textbf{FastAPI} REST endpoints.}\\[3pt]
+
+\textbf{"Tameo" - Embedded vision for an autonomous boat} \textbullet{} \textit{\footnotesize 2025/09 - 2027/06}\\
+{\footnotesize\textit{Team of 5, member then project lead since 2026/09 - Monaco Energy Boat Challenge, AI Class - Python, PyTorch, YOLO, ZED camera}}\\[4pt]
+\indentbox{\footnotesize Detection/segmentation pipeline for motion decisions; fine-tuning, augmentation, \textbf{model benchmarking}: mAP/F1 from about 80\% to 90\%.}\par}
+
+
+\vspace{0.05cm}
+%-----------TECHNICAL SKILLS-----------------
+\section{\textcolor{mydarkgreen}{\textbf{TECHNICAL SKILLS}}}
+{\footnotesize
+\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+\hangindent=1.4em\hangafter=1 \textbf{Programming languages:} Python, C++/C, Java, JavaScript (React, Next.js), SQL\par
+\hangindent=1.4em\hangafter=1 \textbf{Computer Science fundamentals:} data structures, algorithms, software design, object-oriented programming, distributed systems\par
+\hangindent=1.4em\hangafter=1 \textbf{Backend and data:} REST APIs, FastAPI, Django REST Framework, JWT, PostgreSQL, MySQL, NoSQL, pandas, NumPy, Selenium\par
+\hangindent=1.4em\hangafter=1 \textbf{Cloud and developer tooling:} Docker, Google Cloud Platform (GCP), Vercel, CI/CD, Git/GitHub, PyInstaller, Inno Setup\par
+\hangindent=1.4em\hangafter=1 \textbf{AI and Machine Learning:} PyTorch, Vision Transformers, YOLO, OpenCV, scikit-learn, spaCy, LLMs (Llama, Mistral, Gemma)\par
+\hangindent=1.4em\hangafter=1 \textbf{Engineering practices:} refactoring, code quality, test coverage, performance optimization, Agile (Scrum)\par
+}
+
+\vspace{0.05cm}
+%--------AWARDS------------
+\section{\textcolor{mydarkgreen}{\textbf{AWARDS}}}
+{\footnotesize
+\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+\textbf{Honorable Mention - ICPC Colombia 2023} \textbullet{} International Collegiate Programming Contest, XXXVII National Programming Marathon\par
+\textbf{Eiffel Excellence Scholarship} \textbullet{} French government scholarship for the Master's degree at ENSTA Paris (2025-2027)\par
+\textbf{Academic Excellence} \textbullet{} UNAL, tuition waiver\par
+}
+
+\vspace{0.05cm}
+%-----------LANGUAGES-----------------
+\section{\textcolor{mydarkgreen}{\textbf{LANGUAGES}}}
+{\footnotesize
+\noindent \textbf{English:} fluent (C1 - IELTS 2024) \textbullet{} \textbf{French:} upper-intermediate (B2 - DELF 2024) \textbullet{} \textbf{Spanish:} native \textbullet{} \textbf{Portuguese:} basic
+}
+
+
+%-------------------------------------------
+\end{document}
