@@ -1,10 +1,10 @@
 CV FILE: fr\base\Javier_TARAZONA_CV_fr.tex
 
-OUTPUT_FOLDER: en\2-datadog-software-intern
+OUTPUT_FOLDER: fr\5-bnp-ai-research-intern
 
 OFFER: OUTPUT_FOLDER/offer.md
 
-LANGUAGE: English
+LANGUAGE: French
 
 LEGACY FILE: \legacy\
 
