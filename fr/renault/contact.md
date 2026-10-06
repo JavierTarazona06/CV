@@ -26,6 +26,15 @@ Ton CV est particulièrement cohérent avec ce sujet : tu combines vision par or
 
    **Analyse :** la proximité de situation est un gros avantage : vous êtes tous deux élèves ENSTA et intéressés par perception/IA appliquée. Il est susceptible d’être plus accessible qu’un profil senior.
 
+Bom dia, Nuno! Tudo bem?
+
+Obrigado por aceitar meu convite de conexão.
+
+Atualmente, estou procurando um estágio de fim de curso em engenharia, com início em abril de 2027, especialmente nas áreas de Data Science ou Engenharia de IA. Gostaria de saber se a sua equipe, ou alguma outra equipe da Renault, pode ter algum projeto ou uma futura oportunidade que combine com o meu perfil.
+
+Atenciosamente,  
+Javier
+
 4. **Hakan Taspinar — pertinent, surtout côté industrialisation / systèmes**
 
    **Poste actuel :** Renault Group ; l’intitulé précis n’est pas exposé dans les résultats publics. [LinkedIn](https://fr.linkedin.com/in/hakan-taspinar-a004101b8?utm_source=chatgpt.com)  
