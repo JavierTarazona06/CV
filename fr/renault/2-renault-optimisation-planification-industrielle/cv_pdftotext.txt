@@ -1,0 +1,43 @@
+Javier Andres TARAZONA JIMENEZ
+javitar06@gmail.com • +33 7 46 36 97 75 • Massy, France linkedin.com/in/javier-andres-tarazona-jimenez-84b489222 • github.com/JavierTarazona06
+IA générative appliquée à l'optimisation de la planification industrielle
+Stage de fin d'études Bac+5 de 6 mois • Disponible à partir d'avril 2027 • Élève en dernière année d'école d'ingénieur (Grande École)
+IA générative (LLM), analyse de données en Python et optimisation : transformer les données en informations utiles à la prise de décision
+FORMATION
+ENSTA Paris (Institut Polytechnique de Paris) • Palaiseau, France • 2025/09 - 2027/09
+Diplôme d'Ingénieur (Bac+5) - Master of Science in Engineering, parcours Intelligence Artificielle
+Cours : Language Modeling (LLM), Programmation par contraintes, Recherche opérationnelle appliquée, MLOps, Stratégie industrielle
+Universidad Nacional de Colombia (UNAL) • Bogotá, Colombie • 2021/01 - 2025/07
+Cursus d'ingénieur - Ingénierie des Systèmes et Informatique
+12e université d'Amérique latine (QS 2026). Cours : Optimisation, Modélisation et simulation, Modèles stochastiques, Systèmes multi-agents
+University of Saskatchewan • Saskatoon, Canada • 2024/09 - 2024/12
+Échange académique - Informatique : Algorithmes, Ingénierie logicielle, Systèmes d'exploitation
+EXPÉRIENCE PROFESSIONNELLE
+ENSTA Paris - Laboratoire U2IS • Palaiseau, France • 2026/05 - 2026/08
+Stagiaire de recherche en Intelligence Artificielle et Vision 3D
+- Pipeline de données Python : génération automatisée de datasets multi-vues avec Blender (rendu, caméras, métadonnées). - Deep Learning : pré-entraînement auto-supervisé (PyTorch, Vision Transformers) et curriculum learning sur formes 3D.
+APEDYS91 • Paris, France • 2025/10 - 2026/02
+Ingénieur Machine Learning / NLP
+- IA générative et Large Language Models (LLM) : application locale de correction de texte en français, pipeline hybride règles (LanguageTool) et LLM locaux (Mistral, Gemma), modèle choisi selon la RAM/VRAM du poste. - Cohérence des propositions générées : guardrails NER (spaCy) et contrôle des entités/nombres contre incohérences et hallucinations.
+Engin A.I • Bogotá, Colombie (à distance, États-Unis) • 2025/02 - 2025/06
+Ingénieur Logiciel et Vision par Ordinateur
+- Analyse de données : trajectoires de roue (WheelPath) corrélées aux zones de détérioration (+10% de satisfaction utilisateur). - Optimisation d'algorithmes : détection de voies (OpenCV, NumPy, clustering) : +50% de vitesse, +60% de précision. - Qualité logicielle et tests : refactorisation de 2 bibliothèques Python, +70% de score qualité (maintenabilité, couverture de tests).
+Engin A.I • Bogotá, Colombie (à distance, États-Unis) • 2024/01 - 2024/07
+Ingénieur Logiciel et Vision par Ordinateur
+PROJETS
+"ORIUN" - Plateforme web de gestion de candidatures • github.com/JavierTarazona06/ORIUN_back
+- Interface utilisateur et aide à la décision : front-end web interactif (React, Next.js), API REST Django (JWT), base PostgreSQL (SQL), rapports et statistiques pour l'aide à la décision administrative ; Docker, Google Cloud, Agile (SCRUM).
+"Sharp Sight" - Pipeline de collecte et de traitement de données • github.com/JavierTarazona06/SharpSight
+- Qualité des données : collecte multi-sites (Selenium), nettoyage, structuration et catégorisation (pandas) ; API REST FastAPI.
+"Slow" - Application d'analyse vidéo du trafic • github.com/JavierTarazona06/slow
+- Données et restitution : interface Tkinter, historique MySQL et visualisation Matplotlib des vitesses de véhicules estimées avec OpenCV.
+"Tameo" - Vision embarquée pour bateau autonome • 2025/09 - 2027/06
+- Membre puis chef de projet (équipe de 5, Monaco Energy Boat Challenge) : mAP et F1 des détecteurs portés d'environ 80% à 90%.
+COMPÉTENCES TECHNIQUES
+IA et Data Science : IA générative, LLM, Natural Language Processing (NLP), Machine Learning, Deep Learning, analyse de données Optimisation : recherche opérationnelle, programmation par contraintes, modélisation et simulation, modèles stochastiques Langages et librairies : Python, SQL, pandas, NumPy, scikit-learn, PyTorch, spaCy, Matplotlib, OpenCV, Mistral, Gemma, C++, Java Interfaces et industrialisation : React, Next.js, HTML/CSS, FastAPI, Django REST, PostgreSQL, Docker, Google Cloud, CI/CD, Git Méthodes : tests et qualité logicielle, Agile (SCRUM), gestion de projet
+LANGUES
+Anglais : courant (C1 - IELTS 2024) • Français : avancé (B2 - DELF 2024) • Espagnol : langue maternelle • Portugais : notions
+DISTINCTIONS
+Bourse Eiffel Excellence • bourse d'excellence du gouvernement français pour le Master à ENSTA Paris Mention d'Honneur - ICPC Colombie 2023 • XXXVII Marathon National de Programmation ACIS REDIS Excellence académique • UNAL, exonération des frais de scolarité
+
+

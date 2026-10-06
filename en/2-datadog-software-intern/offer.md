@@ -230,3 +230,14 @@ Privacy
 Cookies
 
 English
+
+
+---
+
+Postulation
+
+I came to computer science because I was curious about systems that look simple from the outside but are very complex inside, like the Internet or financial infrastructure, and because I wanted to build such systems myself rather than just use them. Datadog sits right at that point. Its product exists because modern infrastructure has become too complex to understand without tooling. Building it means taking on that complexity at a scale and a reliability few companies face.
+
+That is the kind of engineering I want to grow into. My experience has taught me that value. At Engin A.I, I refactored two Python libraries into a modular design, raising their code-quality score by 70%, and made a detection post-processing step 50% faster. On ORIUN and SharpSight, I built REST backends with Docker and Google Cloud. At APEDYS91, I shipped an application built on large language models (LLMs), where guardrails and choosing the model based on available memory mattered as much as the model itself. Datadog would let me take these foundations at production scale, with guidance from experienced engineers and mentors.
+
+I am also drawn to how Datadog builds AI into its platform, through products like Bits AI and Watchdog, which fits my AI-focused curriculum at ENSTA. I see this internship as the start of a long-term engineering career with Datadog, not just a six-month experience.

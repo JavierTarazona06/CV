@@ -1,0 +1,38 @@
+Javier Andres TARAZONA JIMENEZ
+javitar06@gmail.com • +33 7 46 36 97 75 • Massy, France linkedin.com/in/javier-andres-tarazona-jimenez-84b489222 • github.com/JavierTarazona06
+Data Scientist - Stage de fin d'études en Data Science et Machine Learning
+Élève ingénieur en dernière année (Grande École, Bac+5) • Disponible à partir d'avril 2027 pour 6 mois Machine Learning, modélisation statistique et analyse de données en Python (pandas, scikit-learn, PyTorch) et SQL
+FORMATION
+ENSTA Paris (Institut Polytechnique de Paris) • Palaiseau, France • 2025/09 - 2027/09
+Diplôme d'Ingénieur (Bac+5) - Master of Science in Engineering, parcours Intelligence Artificielle Cours : Machine Learning, Probability and Machine Learning, Deep Learning, MLOps, Maintenance prédictive, Bases de données
+Universidad Nacional de Colombia (UNAL) • Bogotá, Colombie • 2021/01 - 2025/07
+Cursus d'ingénieur - Ingénierie des Systèmes et Informatique 12e université d'Amérique latine (QS 2026). Cours : Probabilités et statistique, Modèles stochastiques, Optimisation, Méthodes numériques
+University of Saskatchewan • Saskatoon, Canada • 2024/09 - 2024/12
+Échange académique - Informatique : Algorithmes, Ingénierie logicielle, Systèmes d'exploitation
+EXPÉRIENCE PROFESSIONNELLE
+ENSTA Paris - Laboratoire U2IS • Palaiseau, France • 2026/05 - 2026/08
+Stagiaire de recherche en Intelligence Artificielle et Vision 3D - Préparation de données : pipeline Python/Blender générant des datasets d'entraînement multi-vues (rendu, caméras, métadonnées). - Deep Learning : pré-entraînement auto-supervisé (PyTorch, Vision Transformers) et curriculum learning sur formes 3D.
+APEDYS91 • Paris, France • 2025/10 - 2026/02
+Ingénieur Machine Learning / NLP - NLP et Large Language Models (LLM) : correction de texte en français par LanguageTool et LLM locaux (Mistral, Gemma). - Fiabilité des modèles : contrôle des entités et des nombres par reconnaissance d'entités nommées (NER, spaCy) contre les hallucinations.
+Engin A.I • Bogotá, Colombie (à distance, États-Unis) • 2025/02 - 2025/06
+Ingénieur Logiciel et Vision par Ordinateur - Machine Learning : clustering non supervisé (OpenCV, NumPy) pour la détection de voies : +50% de vitesse, +60% de précision. - Analyse de données : trajectoires de roue (WheelPath) corrélées aux zones de détérioration (+10% de satisfaction utilisateur).
+Engin A.I • Bogotá, Colombie (à distance, États-Unis) • 2024/01 - 2024/07
+Ingénieur Logiciel et Vision par Ordinateur
+PROJETS
+Segmentation de peau par apprentissage statistique • Équipe de 3, 3 mois, rapport en ligne
+github.com/JavierTarazona06/Vision_LocalFeatures_BayesianClassification_KMeans - Feature engineering : variables RGB/HSV/YCrCb et Cb-Cr enrichies par le gradient de luminance pour la classification pixel à pixel. - Modélisation : comparaison de Gaussian Naive Bayes et QDA (supervisé) avec K-Means (non supervisé) ; scikit-learn, Matplotlib.
+"Tameo" - Vision embarquée pour bateau autonome • 2025/09 - 2027/06
+Équipe de 5, membre puis chef de projet depuis 2026/09 - Monaco Energy Boat Challenge, AI Class - Python, PyTorch, YOLO - Évaluation de modèles : fine-tuning et data augmentation de détecteurs ; mAP, F1, précision/rappel portés d'environ 80% à 90%.
+"Sharp Sight" - Pipeline de collecte et de traitement de données • github.com/JavierTarazona06/SharpSight
+- Données : web scraping (Selenium) multi-sites e-commerce ; nettoyage, structuration et catégorisation avec pandas ; API REST FastAPI.
+"ORIUN" - Plateforme web de gestion de candidatures • github.com/JavierTarazona06/ORIUN_back
+- Données et déploiement : API REST Django, base PostgreSQL (SQL), statistiques d'aide à la décision ; Docker, Google Cloud.
+COMPÉTENCES TECHNIQUES
+Data Science : Machine Learning (supervisé, non supervisé, clustering), modélisation statistique, feature engineering, analyse et visualisation de données, évaluation de modèles (précision, rappel, F1), Deep Learning, NLP, LLM
+Langages et librairies : Python, SQL, pandas, NumPy, scikit-learn, PyTorch, Matplotlib, spaCy, OpenCV, C++/C, Java Mathématiques : probabilités et statistique, modèles stochastiques, optimisation, méthodes numériques, algèbre linéaire Données et industrialisation : PostgreSQL, MySQL, Docker, FastAPI, Git/GitHub, Google Cloud (GCP), CI/CD, Agile (SCRUM)
+LANGUES
+Anglais : courant (C1 - IELTS 2024) • Français : avancé (B2 - DELF 2024) • Espagnol : langue maternelle • Portugais : notions
+DISTINCTIONS
+Bourse Eiffel Excellence • bourse d'excellence du gouvernement français pour le Master à ENSTA Paris Mention d'Honneur - ICPC Colombie 2023 • XXXVII Marathon National de Programmation ACIS REDIS Excellence académique • UNAL, exonération des frais de scolarité
+
+

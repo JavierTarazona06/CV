@@ -1,8 +1,8 @@
 CV FILE: fr\base\Javier_TARAZONA_CV_fr.tex
 
-OUTPUT_FOLDER: fr\5-bnp-ai-research-intern
+OUTPUT_FOLDER: fr\2-renault-optimisation-planification-industrielle
 
-OFFER: OUTPUT_FOLDER/offer.md
+OFFER: fr\2-renault-optimisation-planification-industrielle\offer.md
 
 LANGUAGE: French
 

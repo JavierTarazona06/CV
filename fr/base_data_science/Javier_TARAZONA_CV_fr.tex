@@ -1,0 +1,195 @@
+% !TeX root = Javier_TARAZONA_CV_fr.tex
+% !TeX program = pdflatex
+%-------------------------
+% Resume in Latex
+% Author : Javier Tarazona
+% Offre : offre type - Stage Data Scientist (H/F), stage de fin d'études 6 mois (voir offer.md)
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+\DeclareUnicodeCharacter{00A0}{~}
+\DeclareUnicodeCharacter{2013}{\textendash}
+\DeclareUnicodeCharacter{2014}{\textemdash}
+\DeclareUnicodeCharacter{201C}{``}
+\DeclareUnicodeCharacter{201D}{''}
+\DeclareUnicodeCharacter{2022}{\textbullet}
+\DeclareUnicodeCharacter{25E6}{\textopenbullet}
+\usepackage[T1]{fontenc}      % Codificación de salida (acentos y símbolos)
+\usepackage[utf8]{inputenc}   % Lee texto en UTF-8
+\usepackage[empty]{fullpage}
+\usepackage[pdftex]{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{array}
+\usepackage{enumitem}         % Control de listas
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% --- Viñetas limpias y seguras ---
+\setlist[itemize]{label=\textbullet, labelsep=0.5em, leftmargin=*}
+
+% ===== CORRECTIFS ATS =====
+\input{glyphtounicode}        % chaque glyphe -> vrai texte Unicode (ligatures decomposees)
+\pdfgentounicode=1
+\usepackage[none]{hyphenat}   % point 5 : plus aucun mot-cle coupe
+\sloppy                       %           evite les debordements de marge
+\usepackage{textcomp}         % point 6 : apostrophe ASCII au lieu de U+2019
+\catcode`\'=\active
+\def'{\textquotesingle}
+\hypersetup{                  % point 8 : metadonnees indexables
+  pdftitle={Javier Andres TARAZONA JIMENEZ - CV - Data Scientist - Stage de fin d'études en Data Science et Machine Learning},
+  pdfauthor={Javier Andres TARAZONA JIMENEZ},
+  pdfsubject={Data Scientist - stage de fin d'études Bac+5 de 6 mois à partir d'avril 2027 - Data Science, Machine Learning, statistique, Python, SQL},
+  pdfkeywords={Data Scientist, Data Science, Machine Learning, apprentissage supervisé, apprentissage non supervisé,
+               clustering, modélisation statistique, feature engineering, analyse de données, visualisation de données,
+               évaluation de modèles, Deep Learning, NLP, LLM, Python, SQL, pandas, NumPy, scikit-learn, PyTorch,
+               Matplotlib, Docker, Git, Google Cloud (GCP), MLOps, probabilités, statistique,
+               Bac+5, Diplôme d'Ingénieur, Grande École, stage de fin d'études},
+  pdfborder={0 0 0}           % pas de cadre autour des liens (le soulignement bleu suffit)
+}
+% ==========================
+
+\pagestyle{empty}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\evensidemargin}{-0.45in}
+\addtolength{\textwidth}{1.15in}
+\addtolength{\topmargin}{-.62in}
+\addtolength{\textheight}{1.20in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+
+%\definecolor{mydarkgreen}{RGB}{0, 140, 123}
+\definecolor{mydarkgreen}{RGB}{0, 0, 0}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{mydarkgreen}\titlerule \vspace{-8pt}]
+
+%-------------------------
+% Custom commands
+
+% Indented paragraph helper: \indentbox[ancho]{contenido}
+% Uso: \indentbox{Texto...}  o  \indentbox[1.5em]{Texto...}
+% [t] + \raggedright + \strut : lignes alignees en haut, sans espaces etires ni chevauchement.
+\newcommand{\indentbox}[2][1em]{\hspace*{#1}\parbox[t]{\dimexpr\linewidth-#1\relax}{\raggedright #2\strut}}
+
+% Photo et QR code desactives : dans Workday une photo casse l'analyse du texte voisin.
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+% Nom seul sur la premiere ligne, puis coordonnees en texte brut dans le corps (pas d'en-tete, pas de minipage).
+
+\noindent{\Large\bfseries\textcolor{mydarkgreen}{Javier Andres TARAZONA JIMENEZ}}\par
+\vspace{3pt}
+\noindent{\footnotesize javitar06@gmail.com \textbullet{} +33 7 46 36 97 75 \textbullet{} Massy, France}\par
+\vspace{1pt}
+\noindent{\footnotesize\href{https://www.linkedin.com/in/javier-andres-tarazona-jimenez-84b489222/}{\textcolor{blue}{\underline{linkedin.com/in/javier-andres-tarazona-jimenez-84b489222}}} \textbullet{} \href{https://github.com/JavierTarazona06}{\textcolor{blue}{\underline{github.com/JavierTarazona06}}}}\par
+
+\vspace{0.12cm}
+
+{\centering
+  {\large\bfseries Data Scientist - Stage de fin d'études en Data Science et Machine Learning}\\[2pt]
+  {\footnotesize Élève ingénieur en dernière année (Grande École, Bac+5) \textbullet{} Disponible à partir d'avril 2027 pour 6 mois}\\[3pt]
+  {\footnotesize\textit{Machine Learning, modélisation statistique et analyse de données en Python (pandas, scikit-learn, PyTorch) et SQL}}\par}
+
+\vspace{0.05cm}
+
+%-----------FORMATION-----------------
+\section{\textcolor{mydarkgreen}{\textbf{FORMATION}}}
+{\raggedright
+\textbf{ENSTA Paris (Institut Polytechnique de Paris)} \textbullet{} Palaiseau, France \textbullet{} \textit{\footnotesize 2025/09 - 2027/09}\\
+{\footnotesize\textit{Diplôme d'Ingénieur (Bac+5) - Master of Science in Engineering, parcours Intelligence Artificielle}}\\[3pt]
+{\footnotesize Cours : Machine Learning, Probability and Machine Learning, Deep Learning, MLOps, Maintenance prédictive, Bases de données}\\[4pt]
+
+\textbf{Universidad Nacional de Colombia (UNAL)} \textbullet{} Bogotá, Colombie \textbullet{} \textit{\footnotesize 2021/01 - 2025/07}\\
+{\footnotesize\textit{Cursus d'ingénieur - Ingénierie des Systèmes et Informatique}}\\[3pt]
+{\footnotesize 12e université d'Amérique latine (QS 2026). Cours : Probabilités et statistique, Modèles stochastiques, Optimisation, Méthodes numériques}\\[4pt]
+
+\textbf{University of Saskatchewan} \textbullet{} Saskatoon, Canada \textbullet{} \textit{\footnotesize 2024/09 - 2024/12}\\
+{\footnotesize\textit{Échange académique - Informatique : Algorithmes, Ingénierie logicielle, Systèmes d'exploitation}}\par}
+
+\vspace{0.08cm}
+%-----------EXPERIENCE-----------------
+\section{\textcolor{mydarkgreen}{\textbf{EXPÉRIENCE PROFESSIONNELLE}}}
+{\raggedright
+\textbf{ENSTA Paris - Laboratoire U2IS} \textbullet{} Palaiseau, France \textbullet{} \textit{\footnotesize 2026/05 - 2026/08}\\
+{\footnotesize\textit{Stagiaire de recherche en Intelligence Artificielle et Vision 3D}}\\[3pt]
+\indentbox{\footnotesize \textbf{- Préparation de données :} pipeline Python/Blender générant des datasets d'entraînement multi-vues (rendu, caméras, métadonnées).}\\
+\indentbox{\footnotesize \textbf{- Deep Learning :} pré-entraînement auto-supervisé (\textbf{PyTorch}, \textbf{Vision Transformers}) et curriculum learning sur formes 3D.}\\[4pt]
+
+\textbf{APEDYS91} \textbullet{} Paris, France \textbullet{} \textit{\footnotesize 2025/10 - 2026/02}\\
+{\footnotesize\textit{Ingénieur Machine Learning / NLP}}\\[3pt]
+\indentbox{\footnotesize \textbf{- NLP et Large Language Models (LLM) :} correction de texte en français par LanguageTool et LLM locaux (Mistral, Gemma).}\\
+\indentbox{\footnotesize \textbf{- Fiabilité des modèles :} contrôle des entités et des nombres par reconnaissance d'entités nommées (NER, spaCy) contre les hallucinations.}\\[4pt]
+
+\textbf{Engin A.I} \textbullet{} Bogotá, Colombie (à distance, États-Unis) \textbullet{} \textit{\footnotesize 2025/02 - 2025/06}\\
+{\footnotesize\textit{Ingénieur Logiciel et Vision par Ordinateur}}\\[3pt]
+\indentbox{\footnotesize \textbf{- Machine Learning :} clustering non supervisé (OpenCV, NumPy) pour la détection de voies : \textbf{+50\% de vitesse, +60\% de précision}.}\\
+\indentbox{\footnotesize \textbf{- Analyse de données :} trajectoires de roue (WheelPath) corrélées aux zones de détérioration (+10\% de satisfaction utilisateur).}\\[4pt]
+
+\textbf{Engin A.I} \textbullet{} Bogotá, Colombie (à distance, États-Unis) \textbullet{} \textit{\footnotesize 2024/01 - 2024/07}\\
+{\footnotesize\textit{Ingénieur Logiciel et Vision par Ordinateur}}\par}
+
+
+\vspace{0.08cm}
+%-----------PROJETS-----------------
+\section{\textcolor{mydarkgreen}{\textbf{PROJETS}}}
+{\raggedright
+\textbf{Segmentation de peau par apprentissage statistique} \textbullet{} {\footnotesize Équipe de 3, 3 mois, rapport en ligne}\\
+{\footnotesize\href{https://github.com/JavierTarazona06/Vision_LocalFeatures_BayesianClassification_KMeans}{\textcolor{blue}{\underline{github.com/JavierTarazona06/Vision\_LocalFeatures\_BayesianClassification\_KMeans}}}}\\
+\indentbox{\footnotesize \textbf{- Feature engineering :} variables RGB/HSV/YCrCb et Cb-Cr enrichies par le gradient de luminance pour la classification pixel à pixel.}\\
+\indentbox{\footnotesize \textbf{- Modélisation :} comparaison de Gaussian Naive Bayes et QDA (supervisé) avec K-Means (non supervisé) ; scikit-learn, Matplotlib.}\\[3pt]
+
+\textbf{"Tameo" - Vision embarquée pour bateau autonome} \textbullet{} \textit{\footnotesize 2025/09 - 2027/06}\\
+{\footnotesize\textit{Équipe de 5, membre puis chef de projet depuis 2026/09 - Monaco Energy Boat Challenge, AI Class - Python, PyTorch, YOLO}}\\
+\indentbox{\footnotesize \textbf{- Évaluation de modèles :} fine-tuning et data augmentation de détecteurs ; mAP, F1, précision/rappel portés d'environ 80\% à 90\%.}\\[3pt]
+
+\textbf{"Sharp Sight" - Pipeline de collecte et de traitement de données} \textbullet{} {\footnotesize\href{https://github.com/JavierTarazona06/SharpSight}{\textcolor{blue}{\underline{github.com/JavierTarazona06/SharpSight}}}}\\
+\indentbox{\footnotesize \textbf{- Données :} web scraping (Selenium) multi-sites e-commerce ; nettoyage, structuration et catégorisation avec pandas ; API REST FastAPI.}\\[3pt]
+
+\textbf{"ORIUN" - Plateforme web de gestion de candidatures} \textbullet{} {\footnotesize\href{https://github.com/JavierTarazona06/ORIUN_back}{\textcolor{blue}{\underline{github.com/JavierTarazona06/ORIUN\_back}}}}\\
+\indentbox{\footnotesize \textbf{- Données et déploiement :} API REST Django, base PostgreSQL (SQL), statistiques d'aide à la décision ; Docker, Google Cloud.}\par}
+
+
+\vspace{0.08cm}
+%-----------COMPETENCES TECHNIQUES-----------------
+\section{\textcolor{mydarkgreen}{\textbf{COMPÉTENCES TECHNIQUES}}}
+{\footnotesize
+\setlength{\parindent}{0pt}\setlength{\parskip}{2pt}
+\hangindent=1.4em\hangafter=1 \textbf{Data Science :} Machine Learning (supervisé, non supervisé, clustering), modélisation statistique, feature engineering,\newline analyse et visualisation de données, évaluation de modèles (précision, rappel, F1), Deep Learning, NLP, LLM\par
+\hangindent=1.4em\hangafter=1 \textbf{Langages et librairies :} Python, SQL, pandas, NumPy, scikit-learn, PyTorch, Matplotlib, spaCy, OpenCV, C++/C, Java\par
+\hangindent=1.4em\hangafter=1 \textbf{Mathématiques :} probabilités et statistique, modèles stochastiques, optimisation, méthodes numériques, algèbre linéaire\par
+\hangindent=1.4em\hangafter=1 \textbf{Données et industrialisation :} PostgreSQL, MySQL, Docker, FastAPI, Git/GitHub, Google Cloud (GCP), CI/CD, Agile (SCRUM)\par
+}
+
+\vspace{0.08cm}
+%-----------LANGUES-----------------
+\section{\textcolor{mydarkgreen}{\textbf{LANGUES}}}
+{\footnotesize
+\noindent \textbf{Anglais :} courant (C1 - IELTS 2024) \textbullet{} \textbf{Français :} avancé (B2 - DELF 2024) \textbullet{} \textbf{Espagnol :} langue maternelle \textbullet{} \textbf{Portugais :} notions
+}
+
+\vspace{0.08cm}
+%--------DISTINCTIONS------------
+\section{\textcolor{mydarkgreen}{\textbf{DISTINCTIONS}}}
+{\footnotesize
+\noindent \textbf{Bourse Eiffel Excellence} \textbullet{} bourse d'excellence du gouvernement français pour le Master à ENSTA Paris\\[1pt]
+\noindent \textbf{Mention d'Honneur - ICPC Colombie 2023} \textbullet{} XXXVII Marathon National de Programmation ACIS REDIS\\[1pt]
+\noindent \textbf{Excellence académique} \textbullet{} UNAL, exonération des frais de scolarité
+}
+
+
+%-------------------------------------------
+\end{document}
