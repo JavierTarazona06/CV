@@ -77,6 +77,8 @@ Avoid generic phrases that could apply to any company. Prefer concrete connectio
 
 Do not simply summarize my CV. Select only the information that strengthens the application.
 
+Mention a project, experience, organization, or achievement of mine only if it appears in CV_FILE or is actually introduced and explained in the letter itself. Do not name-drop anything the reader cannot place: if an item from this prompt (for example SharpSight or ORIUN in Part 1) is absent from CV_FILE and the letter has no room to explain it, delete it rather than mention it in passing.
+
 ---
 
 ## 2. Structure of the body
@@ -102,6 +104,8 @@ I am especially interested in this approach because AI is a transversal technolo
 This combination of pragmatism, technical curiosity, and scientific interest contributed to my decision to continue my education in France. At ENSTA, I am pursuing an engineering curriculum focused on artificial intelligence, where I have strengthened my academic foundations while also developing professionally through real projects, technical work, and competitions involving applied AI, computer vision, and data analysis.
 
 In practice, this work has taken shape along three complementary axes. The first is data analysis, which I applied during my research internship at ENSTA Paris - U2IS and in decision-oriented work for the "Tameo" autonomous boat project. The second is computer vision and the processing of signals conveyed through text: the detection and motion-decision vision pipeline I develop for Tameo, the computer vision work on lane and road-marking analysis I carried out at Engin A.I, and the natural language processing application I built at APEDYS91 to support children with dyslexia. The third is software development, since artificial intelligence only creates value once it is deployed and connected into a working service, as shown by SharpSight, ORIUN, and again by my work at Engin A.I.
+
+Of the projects and experiences named above, keep only those that appear in CV_FILE (see the name-dropping rule in section 1).
 
 Keep this section concise. Its purpose is to establish my profile, intellectual motivation, and career direction—not to dominate the entire letter.
 
@@ -229,6 +233,7 @@ Before writing the final letter, silently verify that:
 - every factual statement about me is supported by CV_FILE, the information contained in this prompt, or ADDITIONAL_CONTEXT_FILES;
 - every factual statement about the position or company is supported by JOB_OFFER_FILE or ADDITIONAL_CONTEXT_FILES;
 - no qualifications or experience have been invented;
+- every project, experience, or organization of mine that the letter names appears in CV_FILE or is explained in the letter itself; anything else has been removed;
 - the company-specific paragraph could not simply be copied into an application to another company;
 - the section on what I can bring to the company explicitly connects my experience with the actual requirements of the position;
 - all four required parts are present;
