@@ -30,7 +30,7 @@ Bom dia, Nuno! Tudo bem?
 
 Obrigado por aceitar meu convite de conexão.
 
-Atualmente, estou procurando um estágio de fim de curso em engenharia, com início em abril de 2027, especialmente nas áreas de Data Science ou Engenharia de IA. Gostaria de saber se a sua equipe, ou alguma outra equipe da Renault, pode ter algum projeto ou uma futura oportunidade que combine com o meu perfil.
+Atualmente, estou procurando um estágio de fim de curso, com início em abril de 2027, especialmente nas áreas de Data Science ou Engenharia de IA. Gostaria de saber se a sua equipe, ou alguma outra equipe da Renault, pode ter algum projeto ou uma futura oportunidade que combine com o meu perfil.
 
 Atenciosamente,  
 Javier

@@ -1,12 +1,12 @@
 # VARIABLES — EDIT ONLY THIS SECTION
 
-COMPANY: DataDog, Paris headquarters
+COMPANY: BNP Paribas
 
-LANGUAGE = English
+LANGUAGE = French
 
-OUTPUT_FOLDER = en\1-datadog-applied-science
+OUTPUT_FOLDER = fr\bnp_paribas\1-bnp-ai-research-intern
 
-CV_FILE = OUTPUT_FOLDER\Javier_TARAZONA_CV_en.tex
+CV_FILE = OUTPUT_FOLDER\Javier_TARAZONA_CV_fr.tex
 
 JOB_OFFER_FILE = OUTPUT_FOLDER\offer.md
 
@@ -18,21 +18,21 @@ ADDITIONAL_CONTEXT_FILES = [
 ]
 
 WHY_THIS_COMPANY = 
-De principio, al pensar en Datadog, lo que me hago la idea es una empresa con un crecimiento muy avanzado, muy grande, con clientes también importantes y una gran inversión en inteligencia artificial. Pero principalmente me interesa Datadog porque, no solo por su fama, sino porque sería una oportunidad ideal, o lo veo como una oportunidad ideal, para poder aplicar mis conocimientos científicos relacionados a la inteligencia artificial y a la ciencia de datos en un entorno desafiante. Desafiante porque, de acuerdo con lo que he investigado, el negocio de ustedes se centra en que se observan, se hace una supervisión de los sistemas informáticos de empresas a gran escala. Esto al final significa para mí un montón de información que debe tratarse de alguna forma para mantener estándares de seguridad y de infraestructura que permitan a las empresas realizar sus labores. Entonces es esta misma detección automática, predicción de problemas, investigación, que me despiertan un gran interés. Ya que al final esto no sería solamente un trabajo de análisis de datos básicos, donde a partir de un dataset entreno un modelo, sino que sería algo más encuadrado en una investigación, experimentación de modelos y producción, que se ajusta muy bien con la dinámica de trabajo que he estado llevando yo. Particularmente proyectos como el Faulty Deployment Detection, que precisamente investigué, que realiza eso, analiza los nuevos deployments para ver si tienen fallos y al final consiguieron tener una feature de producción que los identifica. O el proyecto Watchdog Anomaly Detection a gran escala, que realmente es algo similar enfocado en streaming de datos. Entonces este tipo de datos son los que me interesan fuertemente en Datadog. Sería una gran oportunidad para iniciar mi carrera profesional a largo plazo o continuarla en ingeniería AI, ingeniería generativa y manejo de sistemas.
+Bueno, en principio BNP Paribas me interesa mucho porque no es solo una institución financiera cualquiera. De base es una institución que trabaja con tres componentes. lo que es la banca institucional, lo que ya es el lado personal y empresarial, y los seguros. Eso me parece muy interesante porque es mucho con lo que se puede trabajar.Sobre todo me interesa lo que se podría trabajar con temas como las finanzas, el mercado de capitales, los assets y los seguros, porque esos son muchos datos que requieren mucho análisis y toma de decisiones.También me interesa mucho su orientación hacia la IA porque han reportado que tienen más de 800 casos de uso en IA en producción y tienen muchos especialistas y científicos de datos, analistas de negocios de inteligencia artificial, que me... por eso creo que hay un buen entorno de desarrollo en inteligencia artificial, lo que yo estudio. Así como los convenios que tienen con Telecom París y muchas universidades, investigadores de NeurIPS, o ICSE. Asi como sus partnership con Mistral AI y gemini muestran un garn compromiso con la IA que valoro.
 """
 [Optional notes about why I am specifically interested in this company.
 Leave blank if this should be inferred from the job offer and available context.]
 """
 
 WHAT_I_CAN_BRING_TO_THE_COMPANY = 
-Bueno, algunas de las cosas que yo podría aportarle a DataDOG es básicamente esa consigna de ustedes de investigar, producir y customer facing features, ya que es muy relacionado a lo que yo hice en mi stash de investigación en ENSTA. Simplemente no me quedé estudiando un paper, sino que experimenté con las arquitecturas y entrené modelos y usé los datos, los trabajé con ellos, sabiendo cómo integrarlos en el sistema más grande del pipeline de datos que se está construyendo. Entonces aquí, en vez de manejarlo en un contexto académico, sería una escala de software industrial mayor.
+Y sobre lo que yo puedo traer a la compañía es ya tener una experiencia en investigación en lo que tiene que ver con modelos fundacionales, supervisión supervisada, aplicación de investigación de IA, crear pipelines de datos de investigación reproducibles, ya haber usado Mistral para un proyecto y modelos de lenguaje, que conexión también con el RAG y confiabilidad de la IA, que la IA se cierne a cosas, a reglas específicas como con apedis, machine learning aplicado a engineering AI, evaluación científica y evaluar estándares de modelos como en Tameo. e intereses ya en otras áreas como IA confiable, RAG, finanzas cuantitativas. Entonces creo que tengo un buen conocimiento de lo que es aprendizaje de representaciones, lo cual sería muy útil para BNP Paribas, así como venir de un contexto internacional donde BNP Paribas tiene influencia como en Colombia, pero también haber estudiado en Canadá y también estar en el ecosistema de París, que es un fuerte aliado de BNP Paribas.
 """
 [Optional notes about what I believe I can contribute.
 Leave blank if this should be inferred by matching my CV, experience, projects, skills, and academic background with the job offer.]
 """
 
 WHAT_THE_COMPANY_CAN_BRING_ME = 
-Bueno, y lo que me podría aportar a mi DataDog, que en principio sería el aporte en la experiencia en Machine Learning y datos, ya que a través de varias distintas fuentes como los eventos, el código, la topología y las métricas, se tiene que encontrar anomalías, analizar las causas y arreglarlas. Esos son problemas muy enriquecedores, al mismo tiempo que me permitirían pasar de mi perfil académico relacionado un poco a visión computacional y a un Machine Learning actualizado en conocimientos, pero no tanto en práctica, o actualizado en conocimientos, me permitiría hasta terminar de construir la base de mi evolución como científico aplicado en datos o ingeniero de Machine Learning en producción. Esto me sería bien beneficioso y estaría abierto a un posterior crecimiento, así como está creciendo ellos, crecer yo con la empresa, continuar trabajando después con ustedes, para lo cual estoy apto, estaría apto y preparado.
+Sobre el plano técnico. Me gusta que la postulación se enfoque en investigación, en una parte, porque hay que analizar la literatura y realizar hipótesis. Pero yo soy un perfil que no quiere quedarse solo en la investigación, sino que quiero algo más industrial. Entonces el paso a la exposición de producción que ustedes plantean para que hayan sistemas que sean escalables y pasen los requerimientos industriales es interesante. Así como la mentoría que yo podría recibir y ecosistema científico. También me interesa mucho la idea que exista la posibilidad de hacer una tesis CIFRE, C-I-F-R-E. Porque este trabajo de la ciencia aplicada realmente es muy interesante. Entonces, si logramos hacer un buen trabajo, estaría muy interesado en esa opción. Además, proyectos como FIN AI Lab, FIN AI Lab, donde se estudian aprendizaje en tiempo real usando redes masivas de datos que evolucionan en el tiempo, con operaciones de aprendizaje continuo, es el tipo de actividades donde yo quisiera participar. O de ese estilo es lo que a mí me gustaría contribuir. Por ejemplo, también están las investigaciones con tecnologías de modelos fundacionales para series de tiempo financieras de gran escala. y un paper que tiene relacionado de los puentes de Schrödinger para modelamiento generativo en tiempos de series suena muy interesante. No conozco mucho aún del tema, pero está dentro de mis intereses. y demás cosas que se le puedan dar a los lenguajes de LLMs o la co-desarrollo que tienen con Mistral, por ejemplo. Entonces puede ser el paso de algo más industrial de la práctica que realicé en el laboratorio de U2IS, algo más de producto, como lo que hacía en Engine AI y en Apedis. También me gusta la cuestión de que sea una compañía europea que esté en un ecosistema de IA.
 """
 [Optional notes about what I expect to learn, develop, or gain from this company and position.
 Leave blank if this should be inferred from the job offer and available context.]

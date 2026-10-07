@@ -1,7 +1,8 @@
-COMPANY = Datadog  
-ROLE = Software Engineer Intern  
+COMPANY = BNP Paribas
+ROLE = AI Research Intern 
 CV = Attached  
-FOCUS_ONLY_ON_PROJECTS_AND_VALUES_RELATED_TO_ROLE = TRUE  
+OFFER = Attached
+FOCUS_ONLY_ON_PROJECTS_AND_VALUES_RELATED_TO_ROLE = False
 
 I am considering applying to COMPANY for a final-year ENSTA internship in the ROLE position.
 
@@ -10,6 +11,8 @@ Use my attached CV as the main reference to understand my technical background, 
 I want a practical and evidence-based analysis of whether COMPANY would be a valuable company for me to join, specifically from the perspective of this ROLE.
 
 If FOCUS_ONLY_ON_PROJECTS_AND_VALUES_RELATED_TO_ROLE = TRUE, avoid spending time on business areas, products, teams, or company values that have little relevance to ROLE.
+
+In general, I want to answer the questions WHY_THIS_COMPANY, WHAT_I_CAN_BRING_TO_THE_COMPANY, WHAT_THE_COMPANY_CAN_BRING_ME.
 
 ## 1. Company overview
 
