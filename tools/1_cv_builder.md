@@ -1,6 +1,6 @@
 CV FILE: fr\base\Javier_TARAZONA_CV_fr.tex
 
-OUTPUT_FOLDER: fr\bnp_paribas\1-bnp-ai-research-intern
+OUTPUT_FOLDER: fr\bnp_paribas\1-bnp-cardif-ai-aaplied-multimodal
 
 OFFER: OUTPUT_FOLDER\offer.md
 
@@ -35,6 +35,7 @@ When adapting the CV:
 * Preserve a professional, concise, technical style suitable for engineering, AI, software, computer vision, machine learning, data science, or related positions.
 * Do not add generic soft skills unless they are supported by concrete experience.
 * Avoid keyword stuffing and unnecessary repetition.
+* When the offer asks for a skill, technology, or area of knowledge that I do not have, do not put it in the skills section or in any bullet. Instead, list the most relevant ones in a **CENTRES D'INTÉRÊT** section (English: INTERESTS), worded as an interest (for example "Intérêt pour l'IA multimodale et les Vision-Language Models"), never as a skill I master.
 
 **ATS compatibility:** the final CV must read well for a recruiter **and** parse correctly in the Applicant Tracking Systems (ATS) most used in France. Every piece of information must be extractable as plain text, in the right order, and attached to the right section and entry.
 
@@ -46,7 +47,7 @@ When adapting the CV:
 * Put the full name alone on the first line, followed by contact details (email, phone, `City, France`, LinkedIn, GitHub) as plain text in the document body. Never put them in a header/footer (Workday and Taleo often drop them), an image, or an icon.
 * Every hyperlink, including project links, must show the readable URL (for example `github.com/JavierTarazona06/slow`), not a label like "GitHub", because the ATS only keeps the visible text.
 * Do not convey information only through images, icons, symbols, logos, skill bars, ratings, or color. Keep the photo and QR code disabled even though photos are common on French CVs: in Workday a photo breaks the parsing of the text around it.
-* Use standard section headings that an ATS recognizes, each on its own, written in **LANGUAGE**. French: FORMATION, EXPÉRIENCE PROFESSIONNELLE, PROJETS, COMPÉTENCES TECHNIQUES, LANGUES, CERTIFICATIONS, DISTINCTIONS. English: EDUCATION, PROFESSIONAL EXPERIENCE, PROJECTS, TECHNICAL SKILLS, LANGUAGES, CERTIFICATIONS, AWARDS. Do not use creative headings or merged ones such as "COMPÉTENCES & LANGUES".
+* Use standard section headings that an ATS recognizes, each on its own, written in **LANGUAGE**. French: FORMATION, EXPÉRIENCE PROFESSIONNELLE, PROJETS, COMPÉTENCES TECHNIQUES, LANGUES, CERTIFICATIONS, DISTINCTIONS, CENTRES D'INTÉRÊT. English: EDUCATION, PROFESSIONAL EXPERIENCE, PROJECTS, TECHNICAL SKILLS, LANGUAGES, CERTIFICATIONS, AWARDS, INTERESTS. Do not use creative headings or merged ones such as "COMPÉTENCES & LANGUES".
 
 *Entries and dates (Workday autofill)*
 
@@ -95,7 +96,7 @@ At the end, compile the PDF and verify it:
    * each education entry: school, degree, field of study, start, end.
 
    If any field is missing, ambiguous, or attached to the wrong entry, fix the `.tex` file.
-4. **Keyword coverage:** list the offer's 10-15 main keywords and qualifications (including `Bac+5`, degree type, and the job title terms) and confirm that each one appears in the extracted text with the offer's spelling, or state that it is absent because it is not truthful for me.
+4. **Keyword coverage:** list the offer's 10-15 main keywords and qualifications (including `Bac+5`, degree type, and the job title terms) and confirm that each one appears in the extracted text with the offer's spelling, or state that it is absent from the skills because it is not truthful for me (and whether it was added to CENTRES D'INTÉRÊT).
 
 Fix any problem found in steps 2-4, recompile, and check again.
 
