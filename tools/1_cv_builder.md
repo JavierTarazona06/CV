@@ -1,10 +1,10 @@
 CV FILE: fr\base\Javier_TARAZONA_CV_fr.tex
 
-OUTPUT_FOLDER: fr\bnp_paribas\1-bnp-cardif-ai-aaplied-multimodal
+OUTPUT_FOLDER: en\google\europe\switzerl-sft-eng\
 
 OFFER: OUTPUT_FOLDER\offer.md
 
-LANGUAGE: French
+LANGUAGE: English
 
 LEGACY FILE: \legacy\
 
